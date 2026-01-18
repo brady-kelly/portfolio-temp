@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brady Kelly - Professional Portfolio",
+  title: "Brady Kelly - Professional Profile",
   description: "Created Brady with v0"
 }
 
