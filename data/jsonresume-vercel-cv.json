@@ -1,0 +1,231 @@
+{
+  "basics": {
+    "name": "Brady Kelly",
+    "label": "Senior Software Engineer",
+    "picture": "",
+    "dateOfBirth": "1969-12-13",
+    "email": "brady_kelly@tutamail.com",
+    "phone": "0739428038",
+    "website": "",
+    "availability": "1 October 2025",
+    "summary": "I am a highly experienced and proficient C#/.NET full-stack engineer with 25 years of experience in C# and ASP.NET, and other development tools and languages. I have excellent problem-solving and analysis skills, with above-average design, implementation, and troubleshooting capabilities, with back and front-end tooling.\n\nI am a team player with exceptionally good communications skills, and a strong affinity for technical writing. I like to also engage with stakeholders outside of just the software development arena and learn about the business domains I work in.\n\nA special interest in code quality assurance throughout the entire SDLC, and the use of automated and other tooling to identify potential code quality issues, set me apart from many other engineers.",
+    "location": {
+      "address": "16 Symphony Place",
+      "postalCode": "2188",
+      "city": "Randburg",
+      "countryCode": "ZA",
+      "region": "Gauteng"
+    },
+    "profiles": [
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "XI Systems",
+      "url": "",
+      "location": "",
+      "description": "",
+      "position": "Senior Software Engineer",
+      "website": "https://xisystems.co.za",
+      "startDate": "2018-07",
+      "endDate": "2022-08",
+      "product": "the ITIS Web application developed for the South African\nNational Roads Agency (SANRAL)",
+      "tasks": [
+        "Designed, developed, and tested web UI and backend using ASP.NET MVC and jQuery.",
+        "Designed and developed Windows Forms UI and backend.",
+        "Designed and developed Oracle and SQL Server databases.",
+        "Tackled 15GB Git Repo bloated with binary artifacts."
+      ],
+      "technologies": [
+        "C#",
+        "ASP.NET MVC",
+        "jQuery",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Oracle",
+        "SQL Server",
+        "Windows Forms"
+      ],
+      "highlights": [
+        "Reducsing the size of a Git repo that had grown to over 15GB due to the erroneous inclusion of a high number of large binary files"
+      ],
+      "reasonForLeaving": "Career advancement opportunity"
+    },
+    {
+      "company": "Qaits",
+      "location": "",
+      "description": "",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "2015-08",
+      "endDate": "2016-03",
+      "summary": "Engaged as a software engineer. Tasks included:\n - Maintenance tasks on a large CRM system developed by Marvel, UK\n - Technologies used included ASP.NET Web Forms, JavaScript, HTML, and CSS for design.",
+      "highlights": [""]
+    },
+    {
+      "company": "Applogix",
+      "location": "",
+      "description": "",
+      "position": "Freelance Software Engineer",
+      "website": "",
+      "startDate": "2015-05",
+      "endDate": "2015-06",
+      "summary": "Engaged as a freelance software engineer I was tasked with the following:\n - Work on a small, cross-platform system for life assurance quotations on mobile devices\n - Technologies used were JavaScript, Angular, and HTML.",
+      "highlights": [""]
+    },
+    {
+      "company": "Self Employed",
+      "location": "",
+      "description": "",
+      "position": "Freelance Software Engineer",
+      "website": "",
+      "startDate": "2014-07",
+      "endDate": "2015-03",
+      "summary": "I was engaged as a software engineer in various projects. A highlight was:\n - I developed an advanced information transfer system that gathered messages from a mobile capture service called Canvas and converted them into inputs for a web API for Private Property. This allowed real estate listings captured on Canvas to be integrated into Private Property's Property Search service.\n - Technologies I used included a Windows Service written in C#, a WCF service for message retrieval, and a complex mapping system to adapt message content for the Private Property web API.",
+      "highlights": [""]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "position": "",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [""]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UNISA",
+      "area": "Computer Science and Information Systems",
+      "studyType": "Diploma",
+      "startDate": "1994-04",
+      "endDate": "1997-11",
+      "gpa": "",
+      "courses": ["Computer Science", "Databases", "Information Systems", ""]
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Object Oriented Programming",
+      "level": "Master",
+      "keywords": [
+        "C#",
+        "Java",
+        "SOLID",
+        "Encapsulation",
+        "Polymorphism",
+        "Inheritance"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Angular",
+        "React"
+      ]
+    },
+    {
+      "name": "SQL Databases",
+      "level": "Master",
+      "keywords": [
+        "SQL",
+        "Table",
+        "View",
+        "Stored Procedure",
+        "Normalization",
+        "Integrity",
+        "Backups"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Electronics",
+      "keywords": ["Circuits", "Chips", "Transistor"]
+    },
+    {
+      "name": "Philosophy",
+      "keywords": ["Stoicism", "Nietzsche", "Plato"]
+    },
+    {
+      "name": "Automation",
+      "keywords": [
+        "Automatic",
+        "Autonomous",
+        "Programmable",
+        "Machine",
+        "Macro"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "reference": ""
+    },
+    {
+      "name": "",
+      "description": "",
+      "highlights": [],
+      "keywords": [],
+      "startDate": "",
+      "endDate": "",
+      "website": "",
+      "roles": [],
+      "entity": "",
+      "type": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": ""
+    }
+  ],
+  "meta": {
+    "canonical": "",
+    "version": "",
+    "lastModified": ""
+  }
+}
