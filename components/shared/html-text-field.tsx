@@ -37,11 +37,11 @@ export function HtmlTextField(props: HtmlTextFieldProps) {
     return (
         // TODO Sort out col widths
         <div className="p-2">
-            <div className="grid grid-cols-[220px_900px] gap-4">
+            <div className="grid grid-cols-[220px_600px] gap-4">
                 <div className="text-right">
                     <label htmlFor={sp.id} className={errorMessage ? "text-red-500" : ""}>{sp.label}</label>
                 </div>
-                <div className={hClass + " border"}>
+                <div className={hClass + " text-left border"}>
                     {sp.isTextArea
                         ? <HtmlTextArea {...sp} />
                         : <HtmlInput {...sp} />}

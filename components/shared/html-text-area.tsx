@@ -5,7 +5,7 @@ export function HtmlTextArea(props: HtmlTextFieldProps) {
     const sp = safeProps(props);
     return (
         <div>
-            <textarea className="p-1" id={sp.id} name={sp.name} defaultValue={sp.value} required={sp.required} rows={sp.rows} />
+            <textarea className="p-1 w-full" id={sp.id} name={sp.name} defaultValue={sp.value} required={sp.required} rows={sp.rows} />
         </div>
     );
 }
