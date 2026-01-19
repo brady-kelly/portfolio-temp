@@ -36,12 +36,12 @@ export function HtmlTextField(props: HtmlTextFieldProps) {
 
     return (
         // TODO Sort out col widths
-        <>
-            <div className="grid grid-cols-[120px_900px] gap-4">
+        <div className="p-2">
+            <div className="grid grid-cols-[220px_900px] gap-4">
                 <div className="text-right">
                     <label htmlFor={sp.id} className={errorMessage ? "text-red-500" : ""}>{sp.label}</label>
                 </div>
-                <div className={hClass}>
+                <div className={hClass + " border"}>
                     {sp.isTextArea
                         ? <HtmlTextArea {...sp} />
                         : <HtmlInput {...sp} />}
@@ -52,6 +52,6 @@ export function HtmlTextField(props: HtmlTextFieldProps) {
                     {errorMessage}
                 </p>
             )}
-        </>
+        </div>
     );
 }
