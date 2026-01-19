@@ -1,4 +1,4 @@
-import { SkillsContent } from "@/components/cv-info/skills";
+import { SkillsContent } from "@/components/resume/skills";
 import { skillCategories, skillsTools } from "@/data/skills";
 import { SkillCategory } from "@/lib/json/types";
 

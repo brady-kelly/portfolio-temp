@@ -1,0 +1,9 @@
+Type '{ name: string; label: string; email: string; phone: string; summary: string;
+location: { address: string; postalCode: string; city: string; countryName: string; countryCode?: string | undefined; region?: string | undefined; };
+  ... 5 more ...; url?: string | undefined; }' is not assignable to
+type 'BasicsEditorProps'.
+  Types of property 'location' are incompatible.
+Type      { address: string; postalCode: string; city: string; countryName: string; countryCode?: string | undefined; region?: string | undefined; }'
+    is missing the following properties from type
+    '{ name: string; label: string; email: string; phone: string; summary: string;
+location: { address: string; postalCode: string; city: string; countryName: string; countryCode?: string | undefined; region?: string | undefined; }; ... 5 more ...; url?: string | undefined; }': name, label, email, phone, and 6 more.

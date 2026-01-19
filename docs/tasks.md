@@ -1,0 +1,3 @@
+- Remove tsx from data files.
+- Documentation tooling.
+- Store imported resume in db, to allow adding props etc.

@@ -1,6 +1,6 @@
 import { interests, languages } from "@/data/personal"
-import { InterestsSection } from "@/components/cv-info/interestsSection"
-import { LanguagesSection } from "@/components/cv-info/languagesSection"
+import { InterestsSection } from "@/components/resume/interestsSection"
+import { LanguagesSection } from "@/components/resume/languagesSection"
 
 export default async function LanguagesInterestsPage() {
     const languageList = languages;
