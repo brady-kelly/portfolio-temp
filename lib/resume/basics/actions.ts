@@ -20,34 +20,27 @@ export async function updateBasics(
 ): Promise<EditBasicsFormState> {
   const preprocessor = zfd.formData(basicsSchema);
   const state = preprocessor.safeParse(formData);
-  console.log(util.inspect(state, { depth: null }));
 
-  const values = Object.fromEntries(
-    formData,
-  ) as unknown as EditBasicsFormState["values"];
+  const validatedValues = state.success
+    ? state.data
+    : ((state as any).data ?? Object.fromEntries(formData));
 
   if (!state.success) {
     const errs: Record<string, string[]> = {};
-
     state.error.issues.forEach((issue) => {
-      // Join the path array: ["location", "address"] becomes "location.address"
       const path = issue.path.join(".");
-      if (!errs[path]) {
-        errs[path] = [];
-      }
+      if (!errs[path]) errs[path] = [];
       errs[path].push(issue.message);
     });
+
     return {
-      values: values,
+      values: validatedValues, // This preserves the nested profiles array
       success: false,
       errors: errs,
     };
   }
-  const basics = state.data;
-  return {
-    errors: undefined,
-    success: true,
-  };
+
+  return { values: state.data, success: true };
 }
 
 export async function getBasics(

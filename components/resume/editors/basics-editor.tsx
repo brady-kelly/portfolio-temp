@@ -6,6 +6,7 @@ import { HtmlTextField } from "@/components/shared/html-text-field";
 import { updateBasics } from "@/lib/resume/basics/actions";
 import { Profile } from "@/lib/resume/basics/types";
 import { Location } from "@/lib/resume/basics/types";
+import { utilLog } from "@/lib/logging/console";
 
 export type BasicsEditorProps = {
     name: string,
@@ -23,8 +24,11 @@ export type BasicsEditorProps = {
 }
 
 export function BasicsEditor(props: BasicsEditorProps) {
-    const initialState: EditBasicsFormState = buildInitialState(props)
+    utilLog(props, "Basics form state");
+    const initialState: EditBasicsFormState = buildInitialState(props);
+    utilLog(props, "Basics initial state");
     const [state, formAction, pending] = useActionState<EditBasicsFormState, FormData>(updateBasics, initialState)
+    utilLog(state, "Basics form state", true);
     const [profileIndices, setProfileIndices] = useState([0]); // Start with one profile
 
     return (
@@ -48,9 +52,9 @@ export function BasicsEditor(props: BasicsEditorProps) {
                     <HtmlTextField name={"location.countryName"} required={true} label={"Country"} formState={state} />
                     {profileIndices.map((index) => (
                         <div key={index}>
-                            <HtmlTextField name={`profiles[${index}].network`} required={true} label={"Network"} formState={state} />
-                            <HtmlTextField name={`profiles[${index}].username`} required={true} label={"User Name"} formState={state} />
-                            <HtmlTextField name={`profiles[${index}].url`} required={true} label={"Url"} formState={state} />
+                            <HtmlTextField name={`profiles.${index}.network`} required={true} label={"Network"} formState={state} />
+                            <HtmlTextField name={`profiles.${index}.username`} required={true} label={"User Name"} formState={state} />
+                            <HtmlTextField name={`profiles.${index}.url`} required={true} label={"Url"} formState={state} />
                             <button type="button" onClick={() => setProfileIndices(prev => prev.filter(i => i !== index))}>
                                 Remove
                             </button>

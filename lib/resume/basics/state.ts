@@ -23,7 +23,7 @@ export function buildInitialState(props: BasicsEditorProps) {
         countryName: props.location.countryName ?? "",
         countryCode: props.location.countryCode ?? "",
       },
-      profiles: [],
+      profiles: props.profiles,
       dateOfBirth: props.dateOfBirth ?? "",
       nationality: props.nationality,
       workAuth: props.workAuth,

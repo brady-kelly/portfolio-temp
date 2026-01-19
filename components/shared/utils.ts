@@ -18,8 +18,12 @@ export function safeProps(rawProps: HtmlTextFieldProps) {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function fieldState(state: any, fieldName: string) {
+  const getNestedValue = (obj: any, path: string) => {
+    return path.split(".").reduce((acc, part) => acc && acc[part], obj);
+  };
   const basics = {
-    value: state.values?.[fieldName],
+    //value: state.values?.[fieldName],
+    value: getNestedValue(state?.values, fieldName),
     errors: state.errors?.[fieldName] as string[] | undefined,
   };
   return basics;

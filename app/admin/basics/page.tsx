@@ -10,7 +10,6 @@ export default async function BasicDetailsPage() {
         notFound();
     }
 
-    utilLog(res.data, "Basics data");
     const sb = res.data;
     return (
         <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">
