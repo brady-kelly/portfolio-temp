@@ -1,4 +1,4 @@
-import { HtmlTextFieldProps } from "./html-text-field";
+import type { HtmlTextFieldProps } from "./html-text-field";
 import { safeProps } from "./utils";
 
 export function HtmlTextArea(props: HtmlTextFieldProps) {

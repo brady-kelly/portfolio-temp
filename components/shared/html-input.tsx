@@ -1,5 +1,5 @@
 import { utilLog } from "@/lib/logging/console";
-import { HtmlTextFieldProps } from "./html-text-field";
+import type { HtmlTextFieldProps } from "./html-text-field";
 import { safeProps } from "./utils";
 
 export function HtmlInput(props: HtmlTextFieldProps) {
