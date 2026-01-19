@@ -1,9 +1,15 @@
-import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { cvSections } from "@/data/sections";
+import { utilLog } from "@/lib/logging/console";
+import { getBasics } from "@/lib/resume/basics/actions";
+import Link from "next/link";
 
-export default function HomePage() {
+export default async function HomePage() {
   const sections = cvSections;
+  const res = await getBasics("data/jsonResume.json");
+  if (!res.success) {
+    utilLog(res.error, undefined);
+  }
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Hero Section */}
@@ -11,14 +17,13 @@ export default function HomePage() {
         <div className="relative max-w-7xl px-4 sm:px-1 lg:px-2 pt-10 pb-8">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-emerald-600 mb-6 text-balance">
-              Brady Kelly - Senior Software Engineer
+              Professional Portfolio
             </h1>
-            <div className="w-3xl mx-auto">
-              <p className="mb-4">I offer quality software development and related services at reasonable rates.</p>
-              <p>I have 25 years experience in the field and deliver quality solutions with personal care and attention.</p>
-              <p>I specialize in websites, but also do desktop applications, and I am open to discussing any other requirements.</p>
-            </div>
-            <p className="mt-3"><em>(Please note that this site is still under construction and lacks several features. I will have them added as soon as possible.)</em></p>
+            <p className="text-sm md:text-sm text-slate-600 mb-8 max-w-3xl mx-auto text-pretty">
+              Explore my professional journey, skills, and achievements through an organized presentation of my career
+              highlights.
+            </p>
+            <p><em>(Please note that this site is still under construction and lacks several features. I will have them added as soon as possible.)</em></p>
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8">
                 View Full CV
@@ -36,10 +41,6 @@ export default function HomePage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <p className="text-sm md:text-sm text-slate-600 mb-8 max-w-3xl mx-auto text-pretty">
-          Explore my professional journey, skills, and achievements through an organized presentation of my profile and career
-          highlights.
-        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {sections.map((section, index) => {
             const IconComponent = section.icon
@@ -67,6 +68,6 @@ export default function HomePage() {
           })}
         </div>
       </div>
-    </div >
+    </div>
   )
 }

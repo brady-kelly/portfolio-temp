@@ -1,6 +1,6 @@
-import { EducationContent } from "@/components/cv-info/education";
+import { EducationContent } from "@/components/resume/education";
 import { additionalEducation, education } from "@/data/education";
-import { Education } from "@/lib/json/reactive";
+import type { Education } from "@/lib/json/reactive";
 
 export default async function Educationpage() {
     const prim = education as Education[];

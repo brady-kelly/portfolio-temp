@@ -1,6 +1,8 @@
+import { UnsafeBasics } from "../types/unsafe/unsafe-basics";
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export interface CvRoot {
-  basics: Basics;
+  basics: UnsafeBasics;
   work: Work[];
   volunteer: Volunteer[];
   education: Education[];
