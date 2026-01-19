@@ -5,6 +5,7 @@ import { useActionState, useState } from "react";
 import { HtmlTextField } from "@/components/shared/html-text-field";
 import { updateBasics } from "@/lib/resume/basics/actions";
 import { Profile } from "@/lib/resume/basics/types";
+import { Location } from "@/lib/resume/basics/types";
 
 export type BasicsEditorProps = {
     name: string,
@@ -55,7 +56,7 @@ export function BasicsEditor(props: BasicsEditorProps) {
                             </button>
                         </div>
                     ))}
-                    <button disabled={pending}>Sign up</button>
+                    <button disabled={pending}>Save</button>
                 </div>
             </form>
         </div>

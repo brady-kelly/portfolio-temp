@@ -19,25 +19,31 @@ export async function updateBasics(
   formData: FormData,
 ): Promise<EditBasicsFormState> {
   const preprocessor = zfd.formData(basicsSchema);
-  const result = preprocessor.safeParse(formData);
-  console.log(util.inspect(result, { depth: null }));
+  const state = preprocessor.safeParse(formData);
+  console.log(util.inspect(state, { depth: null }));
 
   const values = Object.fromEntries(
     formData,
   ) as unknown as EditBasicsFormState["values"];
 
-  if (!result.success) {
-    const errs = z.flattenError(result.error).fieldErrors as Record<
-      string,
-      string[]
-    >;
+  if (!state.success) {
+    const errs: Record<string, string[]> = {};
+
+    state.error.issues.forEach((issue) => {
+      // Join the path array: ["location", "address"] becomes "location.address"
+      const path = issue.path.join(".");
+      if (!errs[path]) {
+        errs[path] = [];
+      }
+      errs[path].push(issue.message);
+    });
     return {
       values: values,
       success: false,
       errors: errs,
     };
   }
-  const basics = result.data;
+  const basics = state.data;
   return {
     errors: undefined,
     success: true,

@@ -30,6 +30,8 @@ export const basicsTypeSchema = z.object({
   workAuth: z.string(),
 });
 
-export type Profile = z.infer<typeof profileSchema>;
-export type Location = z.infer<typeof basicsTypeSchema>;
+//export type Profile = z.infer<typeof profileSchema>;
+//export type Location = z.infer<typeof basicsTypeSchema>;
+export type Profile = Basics["profiles"][number];
+export type Location = Basics["location"];
 export type Basics = z.infer<typeof basicsTypeSchema>;
