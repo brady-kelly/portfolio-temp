@@ -2,23 +2,23 @@
   "basics": {
     "name": "Brady Kelly",
     "label": "Software Engineer",
-    "image": "https://storage.rxresu.me/clxiky8gv0dlivrn3pn0dg8xc/pictures/tbrplzwfdwkacedwndimhtl9.jpg",
+    "image": "https://example.com/photo.jpg",
     "email": "brady_kelly@tutamail.com",
-    "phone": "+27 73 942 8038",
-    "url": "https://bradykelly.work.gd",
-    "summary": "A summary of Brady Kelly…",
+    "phone": "(912) 555-4321",
+    "url": "https://johndoe.com",
+    "summary": "A summary of John Doe…",
     "location": {
-      "address": "16 Symphony Place, Jacaranda Avenue, Olivedale",
-      "postalCode": "2188",
-      "city": "Randburg",
-      "countryCode": "ZA",
-      "region": "Gauteng"
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
     },
     "profiles": [
       {
-        "network": "X",
-        "username": "@bradykelly",
-        "url": "https://x.com/bradykelly"
+        "network": "Twitter",
+        "username": "john",
+        "url": "https://twitter.com/john"
       }
     ]
   },

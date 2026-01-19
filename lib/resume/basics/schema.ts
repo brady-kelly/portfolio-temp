@@ -4,7 +4,7 @@ import { zfd } from "zod-form-data";
 
 const locationSchema = z.object({
   address: buildZodString("address", 8, 100),
-  postalCode: buildZodString("postalCode", 4, 6),
+  postalCode: buildZodString("postalCode", 4, 7),
   city: buildZodString("city", 2, 50),
   countryCode: buildZodString("countryCode", 2, 2).optional(),
   countryName: buildZodString("countryName", 5, 100),
