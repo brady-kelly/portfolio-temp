@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 export default async function BasicDetailsPage() {
     const res = await getBasics("data/jsonResume.json");
     if (!res.success) {
-        utilLog(res.error, "getBasics failed");
         notFound();
     }
 

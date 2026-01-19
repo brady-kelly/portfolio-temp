@@ -32,14 +32,14 @@ export async function updateBasics(
       if (!errs[path]) errs[path] = [];
       errs[path].push(issue.message);
     });
-
+    utilLog(errs, "Errors");
     return {
       values: validatedValues, // This preserves the nested profiles array
       success: false,
       errors: errs,
     };
   }
-
+  utilLog(state.data, "Values", true);
   return { values: state.data, success: true };
 }
 
@@ -55,7 +55,6 @@ export async function getBasics(
   suppliment(res.basics);
 
   const sb = validate(basicsTypeSchema, res.basics);
-  utilLog(sb, undefined);
   return sb;
 }
 

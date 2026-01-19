@@ -24,11 +24,8 @@ export type BasicsEditorProps = {
 }
 
 export function BasicsEditor(props: BasicsEditorProps) {
-    utilLog(props, "Basics form state");
     const initialState: EditBasicsFormState = buildInitialState(props);
-    utilLog(props, "Basics initial state");
     const [state, formAction, pending] = useActionState<EditBasicsFormState, FormData>(updateBasics, initialState)
-    utilLog(state, "Basics form state", true);
     const [profileIndices, setProfileIndices] = useState([0]); // Start with one profile
 
     return (
