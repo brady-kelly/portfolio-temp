@@ -56,7 +56,7 @@ export async function getBasics(
   suppliment(res.basics);
 
   const sb = validate(basicsTypeSchema, res.basics);
-  utilLog(sb, undefined, true);
+  utilLog(sb, undefined);
   return sb;
 }
 

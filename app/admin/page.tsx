@@ -6,11 +6,11 @@ import { notFound } from "next/navigation";
 export default async function BasicDetailsPage() {
     const res = await getBasics("data/jsonResume.json");
     if (!res.success) {
-        utilLog(res.error, "getBasics failed", true);
+        utilLog(res.error, "getBasics failed");
         notFound();
     }
 
-    ///utilLog(res.data, "Basics data", true);
+    utilLog(res.data, "Basics data");
     const sb = res.data;
     return (
         <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">

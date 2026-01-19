@@ -1,7 +1,3 @@
-- Migrate to biome.
 - Remove tsx from data files.
-- Use jsonresume to enable imports, but compliment with addition data instead of modifying json.
-- Move to jsonResume from rxResume
 - Documentation tooling.
 - Store imported resume in db, to allow adding props etc.
-- Result pattern.

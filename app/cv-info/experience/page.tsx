@@ -6,7 +6,7 @@ import { Experience } from "@/components/resume/experience";
 export default function WorkExperiencePage() {
     const parsedCv: CvRoot = readCvFromJsonFile(cvPath);
     const exp: Work[] = parsedCv.work;
-    utilLog(exp);
+    utilLog(exp, "CV Experience");
 
     return (
         <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">

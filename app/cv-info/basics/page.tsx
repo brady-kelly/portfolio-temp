@@ -8,8 +8,6 @@ import { getInitials } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
 export default async function BasicDetailsPage() {
-    // const parsedCv: CvRoot = readCvFromJsonFile(cvPath);
-    // const basics: UnsafeBasics = parsedCv.basics;
     const result = await getBasics(resumePath);
 
     if (!result.success)
@@ -20,7 +18,7 @@ export default async function BasicDetailsPage() {
 
     return (
         <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">
-            <BasicDetails cvBasics={basics} initials={inits} />
+            <BasicDetails basics={basics} />
         </div>
     );
 }
