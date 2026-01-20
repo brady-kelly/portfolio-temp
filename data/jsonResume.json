@@ -24,13 +24,62 @@
   },
   "work": [
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
-      "highlights": ["Started the company"]
+      "name": "Contactable",
+      "position": "Senior Full Stack Software Engineer",
+      "url": "https://www.contactable.co.za",
+      "startDate": "2024-10-01",
+      "endDate": "2025-08-29",
+      "summary": "Development and maintenance on a large digital identity orchestration platform",
+      "highlights": [
+        "Development and maintenance on a large and complex network of controller based ASP.NET REST APIs.",
+        "Development of Postman collections to test ASP.NET REST APIs, as well as Postman environments to provide suitable test values for endpoints.",
+        "Using Postman single queries and collection runs to test from single to many API endpoints.",
+        "Maintenance on complex, multi-project startup configurations that allowed APIs to run simultaneously on a local machine versus GKE (Google Kubernetes Engine). Many APIs depended on others being available, which sometimes made this task quite complex.",
+        "Debugging of complex problems that sometimes involved external service provider APIs outside of our control.",
+        "Deployment of ASP.NET APIs to GKE",
+        "Administration and querying of several Cassandra databases hosted locally on Docker or on GKE."
+      ]
+    },
+    {
+      "name": "LexisNexis",
+      "position": "Senior Software Engineer",
+      "url": "https://www.lexisnexis.co.za",
+      "startDate": "2024-10-01",
+      "endDate": "2025-08-29",
+      "summary": "Development and maintenance on several Angular based micro-frontend applications",
+      "highlights": [
+        "Development of new features on a large and complex product that comprises multiple services, micro-services, and micro-frontends, hosted on AWS and Azure cloud infrastructures.",
+        "Maintenance and development on Angular components and services for micro-frontend client applications",
+        "Maintenance and development on ASP.NET REST API backend for frontend (BFF) applications, also known as feature peers.",
+        "Complex debugging of Angular client applications that required multiple back and front-end components running simultaneously on production, QA, and local machine environments."
+      ]
+    },
+    {
+      "name": "XI Systems",
+      "position": "Senior Software Engineer",
+      "url": "https://www.xisystems.co.za",
+      "startDate": "2018-07-01",
+      "endDate": "2022-08-31",
+      "summary": "Development and maintenance on several Angular based micro-frontend applications",
+      "highlights": [
+        "Designed, developed, and tested web UI and backend using ASP.NET MVC and jQuery.",
+        "Designed and developed Windows Forms UI and backend.",
+        "Designed and developed Oracle and SQL Server databases.",
+        "Tackled 15GB Git Repo bloated with binary artifacts."
+      ]
+    },
+    {
+      "name": "Self Employed",
+      "position": "Freelance Software Engineer",
+      "startDate": "2009-08-01",
+      "endDate": "2018-08-29",
+      "summary": "Development and maintenance on several Angular based micro-frontend applications",
+      "highlights": [
+        "Designed, developed, and tested web UI and backend using ASP.NET MVC and jQuery.",
+        "Designed and developed Windows Forms UI and backend.",
+        "Designed and developed Oracle and SQL Server databases.",
+        "Tackled 15GB Git Repo bloated with binary artifacts."
+      ]
     }
   ],
   "education": [

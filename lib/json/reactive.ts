@@ -23,36 +23,36 @@ export interface Award {
   summary: string;
 }
 
-export interface Basics {
-  name: string;
-  label: string;
-  picture: string;
-  dateOfBirth: Date;
-  nationality: string;
-  workAuth: string;
-  email: string;
-  phone: string;
-  website: string;
-  availability: string;
-  summary: string;
-  location: Location;
-  profiles: Profile[];
-}
+// export interface Basics {
+//   name: string;
+//   label: string;
+//   picture: string;
+//   dateOfBirth: Date;
+//   nationality: string;
+//   workAuth: string;
+//   email: string;
+//   phone: string;
+//   website: string;
+//   availability: string;
+//   summary: string;
+//   location: Location;
+//   profiles: Profile[];
+// }
 
-export interface Location {
-  address: string;
-  postalCode: string;
-  city: string;
-  countryCode: string;
-  country: string;
-  region: string;
-}
+// export interface Location {
+//   address: string;
+//   postalCode: string;
+//   city: string;
+//   countryCode: string;
+//   country: string;
+//   region: string;
+// }
 
-export interface Profile {
-  network: string;
-  username: string;
-  url: string;
-}
+// export interface Profile {
+//   network: string;
+//   username: string;
+//   url: string;
+// }
 
 export interface EducationEx {
   institution: string;

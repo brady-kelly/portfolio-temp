@@ -1,0 +1,622 @@
+{
+  "basics": {
+    "name": "Brady Kelly",
+    "headline": "Senior Software Engineer",
+    "email": "brady_kelly@tutamail.com",
+    "phone": "+27 73 942 8038",
+    "location": "Johannesburg, South Africa",
+    "url": {
+      "label": "",
+      "href": "https://portfolio-web--portfolio-474f9.europe-west4.hosted.app/basic-details"
+    },
+    "customFields": [],
+    "picture": {
+      "url": "https://storage.rxresu.me/clxiky8gv0dlivrn3pn0dg8xc/pictures/tbrplzwfdwkacedwndimhtl9.jpg",
+      "size": 64,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Summary",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "summary",
+      "content": "<p>I am a highly experienced and proficient C#/.NET full-stack engineer with 25 years of experience in <strong>C#</strong> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a>, and some other development technologies. I have excellent problem-solving and analysis skills, with above-average design, implementation, and troubleshooting capabilities, with back and front-end tooling.<br><br>I am a team player with exceptionally good communications skills, and a strong affinity for technical writing. I like to also engage with stakeholders outside of just the software development arena and learn about the business domains I work in.</p><p>A special interest in code quality assurance through the entire SDLC, and the use of automated and other tooling to identify potential code quality issues, set me apart from many other engineers.</p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "certifications",
+      "items": [
+        {
+          "id": "v3wajv6qia39vyaqj4sedsiv",
+          "visible": true,
+          "name": "Security Journey: White Belt",
+          "issuer": "Security Journey",
+          "date": "October 2022",
+          "summary": "<p>Cloud computing</p>",
+          "url": {
+            "label": "",
+            "href": "https://www.securityjourney.com"
+          }
+        },
+        {
+          "id": "f9z8w667prl8fd1p65dub2az",
+          "visible": true,
+          "name": "Azure Essential Training for Developers",
+          "issuer": "LinkedIn",
+          "date": "April 2022",
+          "summary": "<p>Cloud Development, Microsoft Azure</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "m7jxiokuyd6banfgmsj2jk0y",
+          "visible": true,
+          "name": "  React.js Essential Training",
+          "issuer": "LinkedIn",
+          "date": "April 2022",
+          "summary": "<p>React.js</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "ue2ufv7p60ks9hf7yt12k60x",
+          "visible": true,
+          "name": "C# AND .NET",
+          "issuer": "TestDone",
+          "date": "March 2022",
+          "summary": "<p>Windows Communication Foundation (WCF) · Object-Oriented Programming (OOP) · Cloud Computing · .NET Core · Databases · Test-Driven Development · Unit Testing · <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> Core</p>",
+          "url": {
+            "label": "",
+            "href": "https://www.testdome.com/certificates/01a5154f82e84447aef40212f5e8e9c1"
+          }
+        },
+        {
+          "id": "svh25l2pqtv9lm9cbz0ml6bw",
+          "visible": true,
+          "name": "Project Management: The Basics for Success",
+          "issuer": "University of California",
+          "date": "September 2015",
+          "summary": "<p>Project Management, Communication, Leadership, Team Management</p>",
+          "url": {
+            "label": "",
+            "href": "https://coursera.org/share/78b71991f4f620ed8fab1a1602e2428b"
+          }
+        },
+        {
+          "id": "a0gvdez1adrihpd8ei1qdy4i",
+          "visible": true,
+          "name": "PDSA Method Fundamentals",
+          "issuer": "The TR Training Company",
+          "date": "July, 2024",
+          "summary": "<p>A four-step iterative process for continuous improvement in business processes, quality management, and problem-solving that provides a structured framework for testing ideas, learning from outcomes, and implementing changes.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "ouujsqltso71e7d6v4i6ekb0",
+          "visible": true,
+          "institution": "University of South Africa",
+          "studyType": "Diploma Datametrics",
+          "area": "Computer Science and Information Systems",
+          "score": "",
+          "date": "1994 to 1996",
+          "summary": "<p>Three year diploma in Computer Science and Information Systems</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Experience",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "e94w64kw9e6t3n0uwke2kp1b",
+          "visible": true,
+          "company": "Contactable",
+          "position": "Senior Full Stack Software Engineer",
+          "location": "Irene, Centurion",
+          "date": "1 October 2024 to 29 August 2025",
+          "summary": "<p>Engaged as a Senior Full Stack Software Engineer. Tasks included:</p><ul><li><p>Development and maintenance on a large and complex network of controller based <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> REST APIs. </p></li><li><p>Development of large Postman collections to test <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> REST APIs, as well as Postman environments to provide suitable test values for endpoint. Some collections had over 60 requests.</p></li><li><p>Using Postman single queries and collection runs to test from single to many API endpoints. </p></li><li><p>Maintenance on complex, multi-project startup configurations that allowed APIs to run simultaneously on a local machine versus GKE (Google Kubernetes Engine). Many APIs depended on others being available, which sometimes made this task quite complex.</p></li><li><p>Debugging of complex problems that sometimes involved external service provider APIs outside of our control.</p></li><li><p>Deployment of <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> APIs to GKE.</p></li><li><p>Administration and querying of several Cassandra databases hosted locally on Docker or on GKE.</p></li><li><p>Management of source code version control via Atlassian BitBucket.</p></li><li><p>Administration of assigned work tickets via Atlassian JIRA.</p></li><li><p>Maintaining availability while working from home via Slack, over 5G and backup mobile data.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": "https://www.contactable.co.za"
+          }
+        },
+        {
+          "id": "ghrfyh3ccerljgm64v9ssrnx",
+          "visible": true,
+          "company": "LexisNexis",
+          "position": "Senior Software Engineer",
+          "location": "Remote",
+          "date": "Sep 2022 to Sep 2023",
+          "summary": "<p>Engaged as a senior software engineer. Tasks included:</p><ul><li><p>Development of new features on a large and complex product that comprises multiple services, micro-services, and micro-frontends, hosted on AWS and Azure cloud infrastructures.</p></li><li><p>Maintenance and development on Angular components and services for micro-frontend client applications.</p></li><li><p>Maintenance and development on <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> REST API backend for frontend (BFF) applications, also known as feature peers.</p></li><li><p>Complex debugging of Angular client applications that required multiple back and front-end components running simultaneously on production, QA, and local machine environments.</p></li><li><p>Administration of user stories and work items in Azure DevOps.</p></li></ul><p><em>Reason for leaving:</em> I wanted to explore roles allowing more freedom in improving the development process and less focus on coding only.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "xo8n4i4ox7wlnk1zzjldaksg",
+          "visible": true,
+          "company": "XI Systems",
+          "position": "Senior Engineer",
+          "location": "Johannesburg, South Africa",
+          "date": "Jul 2018 to Aug 2022",
+          "summary": "<p>I worked on the <strong>ITIS Web</strong> application developed for the South African National Roads Agency (SANRAL). Its functions included:</p><ul><li><p>Capture of bridge inspections.</p></li><li><p>Traffic data collection.</p></li><li><p>Toll information collection.</p></li><li><p>Property information management.</p></li><li><p>Capture of incident reports and job instructions on road maintenance projects.</p></li><li><p>Capture of all employment and purchasing details for these projects.<br></p></li></ul><p>Tasks included:</p><ul><li><p>Designed, developed, and tested web UI and backend using <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> MVC and jQuery.</p></li><li><p>Designed and developed Windows Forms UI and backend.</p></li><li><p>Designed and developed Oracle and SQL Server databases.</p></li></ul><p><em>Reason for Leaving:</em> I preferred to find a position where I would be allowed to work from home in an emergency situation, such as temporarily being without transport, and just a little flexibly regarding general office hours.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "r4yxocvkta0vzush18y6xlkd",
+          "visible": true,
+          "company": "Qaits",
+          "position": "Software Engineer",
+          "location": "Johannesburg, South Africa",
+          "date": "Aug 2015 to Mar 2016",
+          "summary": "<p>Engaged as a software engineer. Tasks included:</p><ul><li><p>Maintenance tasks on a large CRM system developed by Marvel, UK</p></li><li><p>Technologies used included <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> Web Forms, JavaScript, HTML, and CSS for design.</p></li></ul><p><em>Reason for Leaving</em>: I needed more room for skills development and career growth.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "g7vovkf07vkelb0zermj07yt",
+          "visible": true,
+          "company": "Applogix",
+          "position": "Freelance Software Engineer",
+          "location": "Johannesburg, South Africa",
+          "date": "May 2015 to Jun 2015",
+          "summary": "<p>Engaged as a freelance software engineer I was tasked with the following:</p><ul><li><p>Work on a small, cross-platform system for life assurance quotations on mobile devices</p></li><li><p>Technologies used were JavaScript, Angular, and HTML.</p></li></ul><p><em>Reason for Leaving: </em>It was a temporary, freelance position and I was no longer required.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "d6oxkrhk6tdf2bzyelfwfw9k",
+          "visible": true,
+          "company": "Self Employed",
+          "position": "Freelance Software Engineer",
+          "location": "Johannesburg, South Africa",
+          "date": "July 2014 to March 2015",
+          "summary": "<p>I was engaged as a software engineer in various projects. A highlight was:</p><ul><li><p>I developed an advanced information transfer system that gathered messages from a mobile capture service called Canvas and converted them into inputs for a web API for Private Property. This allowed real estate listings captured on Canvas to be integrated into Private Property's Property Search service.</p></li><li><p>Technologies I used included a Windows Service written in C#, a WCF service for message retrieval, and a complex mapping system to adapt message content for the Private Property web API.</p></li></ul><p><em>Reason for Leaving: </em>I had an opportunity for a role with more career growth.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "pmp19mlot6tamdmq53w5u7db",
+          "visible": true,
+          "company": "G4S Secure Systems",
+          "position": "Software Engineer",
+          "location": "Centurion, South Africa",
+          "date": "July 2013 to July 2014",
+          "summary": "<p>Engaged as a software engineer, my tasks included</p><ul><li><p>Development of  in-house  <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> MVC applications.</p></li><li><p>Development of a WPF rewrite of a legacy Delphi application. Extensive use of Prism framework and MVVM architecture.</p></li></ul><p><em>Reason for Leaving: </em>Needed a position with more technical scope.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "oix97puwtf0s5yhs5ppxoxwp",
+          "visible": true,
+          "company": "Self Employed",
+          "position": "Freelance Software Engineer",
+          "location": "Johannesburg, South Africa",
+          "date": "August 2009 to July 2013",
+          "summary": "<p>I engaged in various project that included:</p><ul><li><p>Maintenance of <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> intranet application for advertising media house. Extensive use of JavaScript and jQuery.</p></li><li><p>Development and maintenance on an <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> call logging intranet application for the South African CSIR.</p></li><li><p>Development of a production KPI reporting application for Nkomati Nickel Mine.</p></li><li><p>Development work on various websites using <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> MVC3/4 with Razor, SQL Server 2005/2008/2012 and jQuery.</p></li><li><p>Skills most applied were C#, SQL Server 2005, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a>, and JavaScript (jQuery library).</p></li></ul><p><br><em>Reason for Leaving:</em> I was not working through an agency and experienced difficulty securing regular and well-paying work.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "f7jt8qg1mt01x08z3l3f97ld",
+          "visible": true,
+          "company": "Chase Software",
+          "position": "Software Engineer",
+          "location": "Johannesburg, South Africa",
+          "date": "September 2006 to July 2009",
+          "summary": "<p>Development and maintenance on a successful intranet application used by advertising agencies for management of their business. Work included the following tasks:<br><br>UI design on <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> front-end, using extJS framework for layout and UI processes</p><ul><li><p>Development of <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a> web front-end, using <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a>, JavaScript, and extJS framework.</p></li><li><p>Troubleshooting and bug fixing on the JavaScript/extJS front-end.</p></li><li><p>Design and development of a generic accounting export application, including a WinForms based GUI file format designer.</p></li><li><p>Skills most applied were C#, SQL Server 2005, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://ASP.NET\">ASP.NET</a>.</p></li></ul><p><em>Reason for leaving: </em>I was being offered a lot of freelance work and decided to take a break and experiment with freelance work.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "ye82ycn3srm64iiyiycblkzt",
+          "visible": true,
+          "company": "FNB Homeloans",
+          "position": "Senior Software Engineer",
+          "location": "",
+          "date": "September 2004 to August 2006",
+          "summary": "<p>I was engaged as a senior software engineer. Tasks included:</p><ul><li><p>Development, maintenance, and support on various gateway systems interfacing with business partners and clients and receiving electronic home loan applications from mortgage originators. This included the gateway component that received applications from the system I helped develop for Comcorp Online earlier in my career.</p></li><li><p>Extensive troubleshooting, support, and communications with stakeholders.</p></li><li><p>Corrective maintenance on a VB6 and ASP messaging interface.</p></li><li><p>Extraction of complete technical specifications from existing VB6 interface.</p></li><li><p>Re-write of this interface in C#, using COM+ transactions and COM interop with existing VB6 components.</p></li><li><p>Development of an automated FTP transfer application using Microsoft Distributed Transaction Coordinator.<br>Skills most applied were C#, VB6, and SQL Server 2000.<br><br><em>Reason for leaving: </em>I had the opportunity to play a leading role in a startup.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "k4r8pjsh02nrceglyxsj2i77",
+          "visible": true,
+          "company": "I-Com IT",
+          "position": "Software Engineer",
+          "location": "Pretoria, South Africa",
+          "date": "February 2003 to August 2004",
+          "summary": "<p>Design and development of real estate management applications. Tasks included:</p><ul><li><p>Oversight and implementation of large-scale data import, export, and cleansing operations.</p></li><li><p>Development and maintenance of communications with external systems.</p></li><li><p>National publication and deployment of applications and data updates.</p></li><li><p>Participated in OO design team (almost pure UML modelling) for the development of a <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://VB.NET\">VB.NET</a> application for a national real estate network.</p></li><li><p>Development of own supporting tools in C# to ease migration from the client’s previous MS Access system to the new one, including several import automations with foreign key updates, and a semi-intelligent address cleaning tool to assist the import of address data.</p></li><li><p>Extensive troubleshooting of the client’s head office MS Access system during the development and rollout of the new system.</p></li><li><p>Development of automated installation package in C#, including setup and initialization of MSDE database.</p></li><li><p>Development of an automated SQL backup transfer application in C# for a private client. </p></li></ul><p><em>Reason for leaving</em>: I had an opportunity for a role with more scope for career growth at FNB Home Loans.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "nhdjzo6rythmr3v1gxfgkm48",
+          "visible": true,
+          "company": "Comcorp Online",
+          "position": "Consultant Software Engineer",
+          "location": "Johannesburg, South Africa",
+          "date": "November 2000 to January 2003",
+          "summary": "<p>I played a leading role in the startup that pioneered online real estate management and mortgage origination online home loan applications. </p><ul><li><p>Lead developer in the design and implementation of  one of the first  real estate management systems in South Africa, used in over two hundred offices countrywide.</p></li><li><p>Lead developer in the design and implementation of one of the first electronic home loan application and tracking systems in South Africa,  used by most local mortgage origination companies.</p></li><li><p>Various other development and maintenance tasks.</p></li><li><p>This position required extraordinarily strong and highly technical VB6 and SQL Server 2000 skills, ASP, with background XML.</p></li><li><p>While at Comcorp I taught myself C# in my own time, through work on several experimental, private projects.</p></li></ul><p><em>Reason for leaving: </em>I was a consultant commissioned to get the project off the ground and mentor the permanent junior developers. I left because I had fulfilled this brief; the project was live, and the permanent staff were quite competent to continue their own.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "ed8ytx5kpevtjhsu17ovgb7d",
+          "visible": true,
+          "company": "Siemens",
+          "position": "Consultant Engineer",
+          "location": "Johannesburg,, South Africa",
+          "date": "March 1997 to October 2000",
+          "summary": "<p>Consultant ABAP/4 engineer. Tasks included:</p><ul><li><p>Maintenance and development on various SAP applications.</p></li><li><p>Maintenance and development on external interfaces to SAP.</p></li><li><p>Skills applied were ABAP/4, MS Access, and VB6.</p></li><li><p>Achieved SAP Developer Certification with 7 full certifications.</p></li></ul><p><em>Reason for leaving: </em>I offered a position with a lot more responsibility with the exciting new start-up, Comcorp Online.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "h4tx9qwcr27ujy67upu37mu6",
+          "visible": true,
+          "company": "South African Air Force",
+          "position": "Radio Technician",
+          "location": "Pretoria, South Africa",
+          "date": "April 1988 to December 1996",
+          "summary": "<p>I served a three year apprenticeship for a radio technician role, and then after qualifying, another six years which saw that role expand into a more  general telecommunications technician role. Duties included:</p><ul><li><p>Maintenance and installation of telephone installations and networks.</p></li><li><p>Management and repair of key SAAF radio systems.</p></li><li><p>Maintenance of Ethernet LAN equipment and cabling.</p></li><li><p>Acquired initial development experience with limited VBA and Clarion applications.</p></li></ul><p><em>Reason for leaving: </em>A career change from telecommunications technician to software engineer after completing my Diploma Datametrics at UNISA.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteering",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "volunteer",
+      "items": []
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": [
+        {
+          "id": "ulufjf7ne6z2mqq4yxqtupa1",
+          "visible": true,
+          "name": "Coding",
+          "keywords": []
+        },
+        {
+          "id": "za2hwmaa9vep25f37snldgmo",
+          "visible": true,
+          "name": "History",
+          "keywords": []
+        },
+        {
+          "id": "sj14bngyvn229l9elyc8sur2",
+          "visible": true,
+          "name": "TV Series",
+          "keywords": []
+        },
+        {
+          "id": "drfovjgk7in34snld5ktyhd2",
+          "visible": true,
+          "name": "Electronics",
+          "keywords": []
+        }
+      ]
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": [
+        {
+          "id": "sf0tcakdai6ehn9z38sich54",
+          "visible": true,
+          "name": "English",
+          "description": "",
+          "level": 5
+        },
+        {
+          "id": "rep50nrfsta89f9y5fjrlx6h",
+          "visible": true,
+          "name": "Afrikaans",
+          "description": "",
+          "level": 4
+        }
+      ]
+    },
+    "profiles": {
+      "name": "Profiles",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "profiles",
+      "items": [
+        {
+          "id": "bmy1tm84httd5nx4teeklmsx",
+          "visible": true,
+          "network": "LinkedIn",
+          "username": "bradykelly",
+          "icon": "",
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/in/bradykelly"
+          }
+        }
+      ]
+    },
+    "projects": {
+      "name": "Projects",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "projects",
+      "items": []
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "references",
+      "items": []
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "yodl5jijq0qo4lk56xzk0ed4",
+          "visible": true,
+          "name": "C#",
+          "description": "The dominant programming language in the .NET ecosystem",
+          "level": 4,
+          "keywords": [
+            ".NET Language",
+            "OOP",
+            "LINQ"
+          ]
+        },
+        {
+          "id": "w4xdsej8cdc734bq3mcvgpdq",
+          "visible": true,
+          "name": "ASP.NET Core",
+          "description": "Microsoft's framework for web applications and APIs",
+          "level": 4,
+          "keywords": [
+            "REST",
+            "API",
+            "Web Applications"
+          ]
+        },
+        {
+          "id": "zimp75f4b01lmliqfnd4wbve",
+          "visible": true,
+          "name": ".NET Core",
+          "description": "Newer versions of .NET that have replaced .NET Framework",
+          "level": 4,
+          "keywords": [
+            ".NET Core",
+            ".NET 6",
+            ".NET 9"
+          ]
+        },
+        {
+          "id": "pwc53zmxe5xk56sjcetvfjut",
+          "visible": true,
+          "name": "Postman API Client",
+          "description": "Enables sending REST requests to APIs for testing without needing a dedicated client.",
+          "level": 4,
+          "keywords": [
+            "REST",
+            "Automated Testing",
+            "API Testing",
+            "API Client"
+          ]
+        },
+        {
+          "id": "sn49l36ssmr37t8ta1zl456w",
+          "visible": true,
+          "name": "Apache Cassandra NoSQL Database",
+          "description": "A heavy duty, distributed NoSQL database management system",
+          "level": 2,
+          "keywords": [
+            "NoSQL",
+            "Distributed",
+            "Cassandra"
+          ]
+        },
+        {
+          "id": "z4tbpodf9v9ss591sq4eqhzp",
+          "visible": true,
+          "name": "JavaScript",
+          "description": "Interpreted scripting language mainly used for website interactivity",
+          "level": 4,
+          "keywords": [
+            "Script",
+            "EcmaScript",
+            "NodeJs",
+            "HTML DOM Manipulation"
+          ]
+        },
+        {
+          "id": "s2ltp5aeccjqrgn960l659fz",
+          "visible": true,
+          "name": "Entity Framework",
+          "description": "ORM that maps databases to .NET objects",
+          "level": 3,
+          "keywords": [
+            "LINQ",
+            "ORM",
+            "EF"
+          ]
+        },
+        {
+          "id": "tl3wbmtn5kgz7mk7n10hqvhp",
+          "visible": true,
+          "name": "Git",
+          "description": "Git source control",
+          "level": 4,
+          "keywords": [
+            "Git",
+            "GitHub",
+            "BitBucket",
+            "Source Control"
+          ]
+        },
+        {
+          "id": "ksadsy2xv18j1nqdv5vn5gkn",
+          "visible": true,
+          "name": "Testing Frameworks",
+          "description": "",
+          "level": 2,
+          "keywords": [
+            "xunit",
+            "unit tests",
+            "integration tests"
+          ]
+        }
+      ]
+    },
+    "custom": {}
+  },
+  "metadata": {
+    "template": "chikorita",
+    "layout": [
+      [
+        [
+          "profiles",
+          "summary",
+          "education",
+          "skills",
+          "experience",
+          "projects",
+          "references",
+          "interests",
+          "volunteer"
+        ],
+        [
+          "awards",
+          "certifications",
+          "publications",
+          "languages"
+        ]
+      ]
+    ],
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 18,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#0891b2"
+    },
+    "typography": {
+      "font": {
+        "family": "Lora",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 14
+      },
+      "lineHeight": 1.5,
+      "hideIcons": false,
+      "underlineLinks": true
+    },
+    "notes": ""
+  }
+}

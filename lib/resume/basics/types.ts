@@ -28,6 +28,7 @@ export const basicsTypeSchema = z.object({
   dateOfBirth: z.string(),
   nationality: z.string(),
   workAuth: z.string(),
+  availability: z.string(),
 });
 
 //export type Profile = z.infer<typeof profileSchema>;

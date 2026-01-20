@@ -20,7 +20,8 @@ export type BasicsEditorProps = {
     dateOfBirth: string,
     nationality: string,
     workAuth: string,
-    profiles: Profile[]
+    profiles: Profile[],
+    availability: string,
 }
 
 export function BasicsEditor(props: BasicsEditorProps) {

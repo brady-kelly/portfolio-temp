@@ -59,10 +59,10 @@ export async function getBasics(
 }
 
 function suppliment(basics: UnsafeBasics) {
+  basics.availability = "Immediate";
   // TODO: Make a plan to read additionals from storage.
   basics.dateOfBirth = additionalBasics.dateOfBirth;
   basics.nationality = additionalBasics.nationality;
   basics.workAuth = additionalBasics.workAuth;
-
-  basics.location.countryName = "South Africa";
+  if (basics.location) basics.location.countryName = "South Africa";
 }

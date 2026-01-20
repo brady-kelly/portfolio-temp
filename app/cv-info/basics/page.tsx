@@ -1,4 +1,3 @@
-import { BasicDetails } from "@/components/resume/basicDetails";
 import { resumePath } from "@/lib/config/json";
 import { cvPath, readCvFromJsonFile } from "@/lib/json/file";
 import type { CvRoot } from "@/lib/json/reactive";
@@ -6,6 +5,8 @@ import { getBasics } from "@/lib/resume/basics/actions";
 import type { UnsafeBasics } from "@/lib/types/unsafe/unsafe-basics";
 import { getInitials } from "@/lib/utils";
 import { notFound } from "next/navigation";
+import { Basics } from "@/lib/resume/basics/types";
+import { BasicDetails } from "@/components/resume/basicDetails";
 
 export default async function BasicDetailsPage() {
     const result = await getBasics(resumePath);
@@ -18,7 +19,7 @@ export default async function BasicDetailsPage() {
 
     return (
         <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">
-            <BasicDetails basics={basics} />
+            <BasicDetails {...basics} />
         </div>
     );
 }

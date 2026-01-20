@@ -1,6 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { Location } from "@/lib/json/reactive";
+import { Location } from "@/lib/resume/basics/types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -11,7 +11,7 @@ export function skillCatColour(colour: string): string {
 }
 
 export function getAddressLine(location: Location): string {
-  return `${location.address}, ${location.city}, ${location.postalCode}, ${location.region}, ${location.country}`;
+  return `${location.address}, ${location.city}, ${location.postalCode}, ${location.region}, ${location.countryName}`;
 }
 
 export function formatDate(dateString: string, long?: boolean) {
