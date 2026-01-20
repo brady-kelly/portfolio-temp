@@ -15,6 +15,7 @@ export default function HomePage() {
               Brady Kelly - Senior Software Engineer
             </h1>
             <div className="w-3xl mx-auto mb-3.5">
+              <p>I offer quality software development and related services at reasonable rates.</p>
               <p>I have 25 years experience in the field and deliver quality solutions with personal care and attention.</p>
               <p>I specialize in websites, but also do desktop applications, and I am open to discussing any other requirements.</p>
             </div>
