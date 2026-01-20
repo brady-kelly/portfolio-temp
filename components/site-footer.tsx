@@ -20,7 +20,7 @@ export function SiteFooter() {
                                 Home
                             </Button>
                         </Link>
-                        <Link href="/basic-details">
+                        <Link href="/cv-info/basics">
                             <Button
                                 variant="outline"
                                 className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
@@ -28,7 +28,15 @@ export function SiteFooter() {
                                 Basic Details
                             </Button>
                         </Link>
-                        <Link href="/skills">
+                        <Link href="/cv-info/experience">
+                            <Button
+                                variant="outline"
+                                className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
+                            >
+                                Experience
+                            </Button>
+                        </Link>
+                        <Link href="/cv-info/skills">
                             <Button
                                 variant="outline"
                                 className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
@@ -36,7 +44,7 @@ export function SiteFooter() {
                                 Professional Skills
                             </Button>
                         </Link>
-                        <Link href="/education">
+                        <Link href="/cv-info/education">
                             <Button
                                 variant="outline"
                                 className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
@@ -44,7 +52,7 @@ export function SiteFooter() {
                                 Education
                             </Button>
                         </Link>
-                        <Link href="/certificates">
+                        <Link href="/cv-info/certificates">
                             <Button
                                 variant="outline"
                                 className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
@@ -52,7 +60,7 @@ export function SiteFooter() {
                                 Certificates
                             </Button>
                         </Link>
-                        <Link href="/languages-interests">
+                        <Link href="/cv-info/languages-interests">
                             <Button
                                 variant="outline"
                                 className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
