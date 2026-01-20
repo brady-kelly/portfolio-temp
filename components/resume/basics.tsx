@@ -4,15 +4,29 @@ import { Calendar, Globe, Mail, MapPin, Phone } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { formatDateEx, getAddressLine, getInitials } from "@/lib/utils";
-import type { Basics } from "@/lib/resume/basics/types";
+import { formatDate, formatDateEx, getAddressLine, getInitials } from "@/lib/utils";
+import { Profile } from "@/lib/resume/basics/types";
+import { Location } from "@/lib/resume/basics/types";
+import { ContactMe } from "../contact/contact-me";
 
-export type BasicDetailsProps = {
-    basics: Basics;
+export type BasicsProps = {
+    name: string,
+    label: string,
+    image?: string,
+    email: string,
+    phone: string,
+    url?: string,
+    summary: string,
+    location: Location,
+    dateOfBirth: string,
+    nationality: string,
+    workAuth: string,
+    profiles: Profile[],
+    availability: string,
 }
 
-export function BasicDetails({ basics }: BasicDetailsProps) {
-    const initials = getInitials(basics.name);
+export function Basics(props: BasicsProps) {
+    const initials = getInitials(props.name);
     return (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Page Title */}
@@ -33,8 +47,8 @@ export function BasicDetails({ basics }: BasicDetailsProps) {
                                 <span className="text-4xl font-bold text-white">{initials}</span>
                             </div>
 
-                            <h2 className="text-2xl font-bold text-slate-900 mb-2">{basics.name}</h2>
-                            <p className="text-lg text-emerald-600 font-medium mb-4">{basics.label}</p>
+                            <h2 className="text-2xl font-bold text-slate-900 mb-2">{props.name}</h2>
+                            <p className="text-lg text-emerald-600 font-medium mb-4">{props.label}</p>
 
                             <div className="flex flex-wrap gap-2 justify-center mb-6">
                                 <Badge variant="secondary" className="bg-slate-100 text-slate-700">
@@ -42,7 +56,7 @@ export function BasicDetails({ basics }: BasicDetailsProps) {
                                 </Badge>
                             </div>
 
-                            <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">Contact Me</Button>
+                            <ContactMe />
                         </CardContent>
                     </Card>
                 </div>
@@ -60,20 +74,20 @@ export function BasicDetails({ basics }: BasicDetailsProps) {
                         <CardContent className="space-y-4">
                             <div className="flex items-center gap-3">
                                 <Mail className="w-4 h-4 text-slate-500" />
-                                <span className="text-slate-700">{basics.email}</span>
+                                <span className="text-slate-700">{props.email}</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Phone className="w-4 h-4 text-slate-500" />
-                                <span className="text-slate-700">{basics.phone}</span>
+                                <span className="text-slate-700">{props.phone}</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <MapPin className="w-4 h-4 text-slate-500" />
-                                <span className="text-slate-700">{getAddressLine(basics.location)}</span>
+                                <span className="text-slate-700">{getAddressLine(props.location)}</span>
                             </div>
                             {/* TODO: Only include website if provided. */}
                             <div className="flex items-center gap-3">
                                 <Globe className="w-4 h-4 text-slate-500" />
-                                <span className="text-slate-700"><a href={basics.website}>{basics.website}</a></span>
+                                <span className="text-slate-700"><a href={props.url}>{props.url}</a></span>
                             </div>
                         </CardContent>
                     </Card>
@@ -90,19 +104,19 @@ export function BasicDetails({ basics }: BasicDetailsProps) {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label className="text-sm font-medium text-slate-500">Date of Birth</label>
-                                    <p className="text-slate-700">{formatDateEx(basics.dateOfBirth, true)}</p>
+                                    <p className="text-slate-700">{formatDate(props.dateOfBirth, true)}</p>
                                 </div>
                                 <div>
                                     <label className="text-sm font-medium text-slate-500">Nationality</label>
-                                    <p className="text-slate-700">{basics.nationality}</p>
+                                    <p className="text-slate-700">{props.nationality}</p>
                                 </div>
                                 <div>
                                     <label className="text-sm font-medium text-slate-500">Work Authorization</label>
-                                    <p className="text-slate-700">{basics.workAuth}</p>
+                                    <p className="text-slate-700">{props.workAuth}</p>
                                 </div>
                                 <div>
                                     <label className="text-sm font-medium text-slate-500">Availability</label>
-                                    <p className="text-slate-700">{basics.availability}</p>
+                                    <p className="text-slate-700">{props.availability}</p>
                                 </div>
                             </div>
                         </CardContent>
@@ -117,7 +131,7 @@ export function BasicDetails({ basics }: BasicDetailsProps) {
                             <div
                                 className="text-slate-700 leading-relaxed text-pretty space-y-4"
                                 dangerouslySetInnerHTML={{
-                                    __html: basics.summary
+                                    __html: props.summary
                                         .split('\n\n')
                                         .filter(p => p.trim())
                                         .map(p => `<p>${p.trim()}</p>`)
