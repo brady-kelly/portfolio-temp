@@ -59,6 +59,7 @@ export async function getBasics(
 }
 
 function suppliment(basics: UnsafeBasics) {
+  basics.availability = "7 Days";
   // TODO: Make a plan to read additionals from storage.
   basics.dateOfBirth = additionalBasics.dateOfBirth;
   basics.nationality = additionalBasics.nationality;

@@ -1,4 +1,3 @@
-import { BasicDetails } from "@/components/resume/basicDetails";
 import { resumePath } from "@/lib/config/json";
 import { cvPath, readCvFromJsonFile } from "@/lib/json/file";
 import type { CvRoot } from "@/lib/json/reactive";
