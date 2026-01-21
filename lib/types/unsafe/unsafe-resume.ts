@@ -10,6 +10,7 @@ import { Reference } from "./reference";
 import { Skill } from "./skill";
 import { Volunteer } from "./volunteer";
 import { Work } from "./work";
+import { UnsafeExperience } from "./unsafe-experience";
 
 /**
  * A resume as defined by JsonResume.
@@ -18,7 +19,7 @@ import { Work } from "./work";
  */
 export type UnsafeResume = {
   basics?: UnsafeBasics;
-  work?: Work[];
+  work?: UnsafeExperience[];
   volunteer?: Volunteer[];
   education?: Education[];
   awards?: Award[];

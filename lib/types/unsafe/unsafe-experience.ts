@@ -3,7 +3,7 @@
  * @remarks Used for import/export with JsonResume.
  * @see {@link Resume}
  */
-export type Work = {
+export type UnsafeExperience = {
   /**
    * e.g. Facebook
    */
@@ -34,4 +34,5 @@ export type Work = {
    * Specify multiple accomplishments
    */
   highlights?: string[];
+  reasonForLeaving?: string;
 };

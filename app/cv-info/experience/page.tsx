@@ -2,7 +2,7 @@ import { utilLog } from "@/lib/logging/console";
 import { CvRoot } from "@/lib/json/reactive";
 import { cvPath, readCvFromJsonFile } from "@/lib/json/file";
 import { Experience } from "@/components/resume/experience";
-import { Work } from "@/lib/resume/work/types";
+import { Work } from "@/lib/resume/experience/types";
 
 export default function WorkExperiencePage() {
     const parsedCv: CvRoot = readCvFromJsonFile(cvPath);

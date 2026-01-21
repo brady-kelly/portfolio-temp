@@ -1,6 +1,6 @@
 import z from "zod";
 
-export const workTypeSchema = z.object({
+export const experienceTypeSchema = z.object({
   name: z.string(),
   position: z.string(),
   location: z.string().optional(),
@@ -13,4 +13,4 @@ export const workTypeSchema = z.object({
   reasonForLeaving: z.string(),
 });
 
-export type Work = z.infer<typeof workTypeSchema>;
+export type Experience = z.infer<typeof experienceTypeSchema>;

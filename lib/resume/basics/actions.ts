@@ -9,7 +9,7 @@ import { zfd } from "zod-form-data";
 import { UnsafeResume } from "@/lib/types/unsafe/unsafe-resume";
 import { additionalBasics } from "@/data/additional/basics";
 import { Basics, basicsTypeSchema } from "./types";
-import { validate } from "./validationGen";
+import { validate } from "../../validation/validationGen";
 import { err, Result } from "@/lib/validation/result";
 import { utilLog } from "@/lib/logging/console";
 import { UnsafeBasics } from "@/lib/types/unsafe/unsafe-basics";
