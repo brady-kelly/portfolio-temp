@@ -1,6 +1,5 @@
 /** biome-ignore-all assist/source/organizeImports: TODO: Later */
 import { utilLog } from "@/lib/logging/console";
-import { cvPath } from "@/lib/json/file";
 import { getExperience } from "@/lib/resume/experience/actions";
 import { ExperienceSection } from "@/components/resume/experience";
 import { resumePath } from "@/lib/config/json";

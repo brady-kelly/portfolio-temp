@@ -1,13 +1,10 @@
-/** biome-ignore-all lint/style/useImportType: <explanation> */
-import { err, ok, Result } from "@/lib/validation/result";
-import z from "zod";
-import * as fs from "fs/promises";
-import type { UnsafeResume } from "@/lib/types/unsafe/unsafe-resume";
-import { type Experience, experienceTypeSchema } from "./types";
-import type { UnsafeExperience } from "@/lib/types/unsafe/unsafe-experience";
-import { validate } from "../../validation/validationGen";
 import { technologies } from "@/data/additional/experience";
-import { utilLog } from "@/lib/logging/console";
+import type { UnsafeExperience } from "@/lib/types/unsafe/unsafe-experience";
+import type { UnsafeResume } from "@/lib/types/unsafe/unsafe-resume";
+import { err, ok, type Result } from "@/lib/validation/result";
+import * as fs from "node:fs/promises";
+import { validate } from "../../validation/validationGen";
+import { type Experience, experienceTypeSchema } from "./types";
 
 export async function getExperience(
   filePath: string,
@@ -23,9 +20,8 @@ export async function getExperience(
   const experiences: Experience[] = [];
 
   const onlyOne = res.work.slice(0, 1);
-  onlyOne?.forEach((item, index) => {
+  onlyOne?.forEach((item) => {
     suppliment(item);
-    //utilLog(item, "One", true);
     const sb = validate(experienceTypeSchema, item);
     if (sb.success) {
       experiences.push(sb.data);
@@ -43,18 +39,4 @@ export async function getExperience(
 function suppliment(exp: UnsafeExperience) {
   exp.technologies = technologies;
   exp.reasonForLeaving = "Something better";
-}
-
-function mapProps(exp: UnsafeExperience) {
-  return {
-    name: exp.company,
-    summary: exp.summary,
-    position: exp.position,
-    url: exp.url,
-    startDate: exp.startDate,
-    endDate: exp.endDate,
-    highlights: exp.highlights,
-    reasonForLeaving: exp.reasonForLeaving,
-    technologies: exp.technologies,
-  };
 }
