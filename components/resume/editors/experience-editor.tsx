@@ -25,6 +25,10 @@ export function ExperienceEditor(props: ExperienceEditorProps) {
             <form action={formAction}>
                 <div className="grid grid-cols-1 w-3xl text-center">
                     <HtmlTextField name={"name"} required={true} formState={state} />
+                    <HtmlTextField name={"position"} required={true} formState={state} />
+                    <HtmlTextField name={"location"} formState={state} />
+                    <HtmlTextField name={"url"} required={true} formState={state} />
+                    <HtmlTextField name={"name"} required={true} formState={state} />
                 </div>
             </form>
         </div>
