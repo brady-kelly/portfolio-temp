@@ -1,9 +1,9 @@
 import z from "zod";
-import { basicsSchema } from "./schema";
+import { basicsFormSchema } from "./schema";
 import { BasicsEditorProps } from "@/components/resume/editors/basics-editor";
 
 export type EditBasicsFormState = {
-  values?: z.infer<typeof basicsSchema>;
+  values?: z.infer<typeof basicsFormSchema>;
   errors?: Record<string, string[]>;
   success: boolean;
 };

@@ -58,7 +58,7 @@ export function BasicsEditor(props: BasicsEditorProps) {
                             </button>
                         </div>
                     ))}
-                    <button disabled={pending}>Save</button>
+                    <button type="submit" disabled={pending}>Save</button>
                 </div>
             </form>
         </div>

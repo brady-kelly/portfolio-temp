@@ -2,7 +2,7 @@
 
 import z from "zod";
 import * as fs from "fs/promises";
-import { basicsSchema } from "./schema";
+import { basicsFormSchema } from "./schema";
 import { EditBasicsFormState } from "./state";
 import * as util from "node:util";
 import { zfd } from "zod-form-data";
@@ -18,7 +18,7 @@ export async function updateBasics(
   prevState: EditBasicsFormState,
   formData: FormData,
 ): Promise<EditBasicsFormState> {
-  const preprocessor = zfd.formData(basicsSchema);
+  const preprocessor = zfd.formData(basicsFormSchema);
   const state = preprocessor.safeParse(formData);
 
   const validatedValues = state.success

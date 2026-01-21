@@ -5,6 +5,18 @@ import type { UnsafeResume } from "@/lib/types/unsafe/unsafe-resume";
 import { err, ok, type Result } from "@/lib/validation/result";
 import { validate } from "../../validation/validationGen";
 import { type Experience, experienceTypeSchema } from "./types";
+import { EditExperienceFormState, experienceFormSchema } from "./form";
+import { zfd } from "zod-form-data";
+
+export async function updateExperience(
+  prevState: EditExperienceFormState,
+  formData: FormData,
+): Promise<EditExperienceFormState> {
+  const preprocessor = zfd.formData(experienceFormSchema);
+  const state = preprocessor.safeParse(formData);
+  //....
+  return { values: state.data, success: true };
+}
 
 export async function getExperience(
   filePath: string,
