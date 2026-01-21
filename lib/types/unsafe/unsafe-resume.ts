@@ -9,7 +9,6 @@ import { Publication } from "./publication";
 import { Reference } from "./reference";
 import { Skill } from "./skill";
 import { Volunteer } from "./volunteer";
-import { Work } from "./work";
 import { UnsafeExperience } from "./unsafe-experience";
 
 /**

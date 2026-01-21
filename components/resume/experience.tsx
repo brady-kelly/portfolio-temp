@@ -1,17 +1,33 @@
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: TODO: Later */
+/** biome-ignore-all assist/source/organizeImports: TODO: Later */
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import Link from "next/link";
 import { Badge } from "../ui/badge";
 import { Building, Calendar } from "lucide-react";
-import { Work } from "@/lib/json/reactive";
 import { formatDate } from "@/lib/utils";
+import type { Experience } from "@/lib/resume/experience/types";
+import { utilLog } from "@/lib/logging/console";
 
-export interface ExperienceProps {
-    experience: Work[];
+export type ExperienceProps = {
+    name: string;
+    position: string;
+    summary: string;
+    startDate: string;
+    endDate: string;
+    highlights: string[];
+    reasonForLeaving: string;
+    location?: string;
+    url?: string;
+    technologies?: string[];
+};
+
+export interface ExperienceSectionProps {
+    experiences: ExperienceProps[];
 }
 
-export function Experience({ experience }: ExperienceProps) {
+export function ExperienceSection({ experiences }: ExperienceSectionProps) {
+    utilLog(experiences, "Props", true);
     return (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Page Title */}
@@ -31,10 +47,10 @@ export function Experience({ experience }: ExperienceProps) {
                 <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-slate-200"></div>
 
                 <div className="space-y-8">
-                    {experience.map((job: Work, index: number) => (
+                    {experiences.map((job: Experience, index: number) => (
                         <div key={index} className="relative flex items-start gap-6">
                             {/* Timeline Dot */}
-                            <div className="flex-shrink-0 w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center relative z-10">
+                            <div className="shrink-0 w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center relative z-10">
                                 <Building className="w-8 h-8 text-white" />
                             </div>
                             {/* Job Card */}
@@ -46,12 +62,12 @@ export function Experience({ experience }: ExperienceProps) {
                                                 {job.position}
                                             </CardTitle>
                                             <a
-                                                href={job.website}
+                                                href={job.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="text-lg font-medium text-emerald-600 hover:text-emerald-700 hover:underline"
                                             >
-                                                {job.company}
+                                                {job.name}
                                             </a>
                                         </div>
                                         <Badge
@@ -69,28 +85,6 @@ export function Experience({ experience }: ExperienceProps) {
                                     </div>
                                 </CardHeader>
                                 <CardContent className="space-y-4">
-                                    <h4 className="font-medium text-slate-900 mb-2">
-                                        Product:
-                                    </h4>
-                                    <p className="text-slate-700 leading-relaxed text-pretty">
-                                        {job.product}
-                                    </p>
-                                    <div>
-                                        <h4 className="font-medium text-slate-900 mb-2">
-                                            Duties:
-                                        </h4>
-                                        <ul className="space-y-1">
-                                            {job.tasks.map((duty, index) => (
-                                                <li
-                                                    key={index}
-                                                    className="text-slate-700 flex items-start gap-2"
-                                                >
-                                                    <span className="w-1.5 h-1.5 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
-                                                    <span className="text-pretty">{duty}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
                                     <div>
                                         <h4 className="font-medium text-slate-900 mb-2">
                                             Highlights:
@@ -101,13 +95,12 @@ export function Experience({ experience }: ExperienceProps) {
                                                     key={highlightIndex}
                                                     className="text-slate-700 flex items-start gap-2"
                                                 >
-                                                    <span className="w-1.5 h-1.5 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
+                                                    <span className="w-1.5 h-1.5 bg-emerald-600 rounded-full mt-2 shrink-0"></span>
                                                     <span className="text-pretty">{highlight}</span>
                                                 </li>
                                             ))}
                                         </ul>
                                     </div>
-
                                     <div>
                                         <h4 className="font-medium text-slate-900 mb-2">
                                             Technologies Used:

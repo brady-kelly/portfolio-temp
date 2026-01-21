@@ -7,7 +7,7 @@ export type UnsafeExperience = {
   /**
    * e.g. Facebook
    */
-  name?: string;
+  company?: string;
   /**
    * e.g. Menlo Park, CA
    */
@@ -35,4 +35,5 @@ export type UnsafeExperience = {
    */
   highlights?: string[];
   reasonForLeaving?: string;
+  technologies: string[];
 };
