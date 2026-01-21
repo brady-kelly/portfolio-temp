@@ -1,8 +1,8 @@
+import * as fs from "node:fs/promises";
 import { technologies } from "@/data/additional/experience";
 import type { UnsafeExperience } from "@/lib/types/unsafe/unsafe-experience";
 import type { UnsafeResume } from "@/lib/types/unsafe/unsafe-resume";
 import { err, ok, type Result } from "@/lib/validation/result";
-import * as fs from "node:fs/promises";
 import { validate } from "../../validation/validationGen";
 import { type Experience, experienceTypeSchema } from "./types";
 
