@@ -10,9 +10,7 @@ export function ContactMe() {
     return (
         <a href={whatsappUrl}>
             <Button colorPalette="teal" variant="solid">
-                {/* <a href={whatsappUrl}> */}
                 <Whatsapp /> Contact Me
-                {/* </a> */}
             </Button>
         </a>
     );

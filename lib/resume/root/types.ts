@@ -28,3 +28,11 @@ export type SafeResume = {
   references?: Reference[];
   projects?: Project[];
 };
+
+export type ResumeSection = {
+  title: string;
+  description: string;
+  href: string;
+  iconName: string;
+  color: string;
+};
