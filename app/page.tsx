@@ -5,7 +5,7 @@ import { ContactMe } from "@/components/contact/contact-me";
 import { Hero } from "@/components/home/hero";
 import { Award, Briefcase, Globe, GraduationCap, User } from "lucide-react";
 import { HomeSectionCard } from "@/components/home/home-section-card";
-import { Center, Container, Text } from "@chakra-ui/react";
+import { Center, Container, Text, VStack } from "@chakra-ui/react";
 
 function getIcon(iconName: string) {
   const icon = User;
@@ -23,13 +23,15 @@ export default function HomePage() {
   return (
     <Container>
       <Center>
-        <Hero />
-        <Text>Explore my professional journey, skills, and achievements through an organized presentation of my career highlights.</Text>
-        {/* <Center>
+        <VStack>
+          <Hero />
+          <Text>Explore my professional journey, skills, and achievements through an organized presentation of my career highlights.</Text>
+          {/* <Center>
           {sections.map((section, index) =>
             <HomeSectionCard key={index} {...section} />
           )}
         </Center> */}
+        </VStack>
       </Center>
     </Container >
   )
