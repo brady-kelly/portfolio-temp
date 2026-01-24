@@ -1,5 +1,5 @@
 /** biome-ignore-all assist/source/organizeImports: TODO: Biome */
-import { Box, Card, Heading, Text, HStack, Square } from "@chakra-ui/react";
+import { Box, Card, Heading, Text, HStack, Square, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import { DynamicIcon } from "lucide-react/dynamic";
 import type dynamicIconImports from 'lucide-react/dynamicIconImports';
@@ -19,8 +19,8 @@ export type HomeSectionCardProps = {
 export function HomeSectionCard(section: HomeSectionCardProps) {
     return (
         <Link key={section.href} href={section.href}>
-            <Card.Root padding="6">
-                <Card.Title>
+            <Box padding="6">
+                <VStack>
                     <HStack alignItems="start">
                         <Square width="50px" height="50px" bg="teal" flexShrink={0} rounded="md">
                             <DynamicIcon color="white" name={toKebabCase(section.iconName) as LucideIconName} />
@@ -34,13 +34,11 @@ export function HomeSectionCard(section: HomeSectionCardProps) {
                             {section.title}
                         </Heading>
                     </HStack>
-                </Card.Title>
-                <Card.Body>
                     <Text textWrap="pretty">
                         {section.description}
                     </Text>
-                </Card.Body>
-            </Card.Root>
+                </VStack>
+            </Box>
         </Link>
     )
 }
