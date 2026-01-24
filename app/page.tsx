@@ -1,11 +1,10 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
+/** biome-ignore-all assist/source/organizeImports: <explanation> */
 import { cvSections } from "@/data/sections";
 import { Hero } from "@/components/home/hero";
-import { Award, Briefcase, Globe, GraduationCap, User } from "lucide-react";
-import { HomeSectionCard } from "@/components/home/home-section-card";
-import { Center, Container, Text, VStack } from "@chakra-ui/react";
-import { ResumeSchema } from "@/lib/types/original/raw";
-import { ResumeSection } from "@/lib/resume/root/types";
+import { Center, Container, VStack } from "@chakra-ui/react";
+import type { ResumeSection } from "@/lib/resume/root/types";
+import { SectionsNav } from "@/components/home/sections-nav";
 
 export default function HomePage() {
   const sections: ResumeSection[] = cvSections;
@@ -14,12 +13,7 @@ export default function HomePage() {
       <Center>
         <VStack>
           <Hero />
-          <Text>Explore my professional journey, skills, and achievements through an organized presentation of my career highlights.</Text>
-          <Center>
-            {sections.map((section, index) =>
-              <HomeSectionCard key={index} {...section} />
-            )}
-          </Center>
+          <SectionsNav sections={sections} />
         </VStack>
       </Center>
     </Container >

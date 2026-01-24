@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <Provider>
           <Flex direction="column" minHeight="100vh">
-            <Box as="header">
+            <Box as="header" paddingX="4">
               <SiteHeader />
             </Box>
             <Box as="main" flexGrow={1} padding={4}>
