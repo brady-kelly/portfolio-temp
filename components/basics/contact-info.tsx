@@ -9,6 +9,7 @@ import { HStack, VStack } from "@chakra-ui/react/stack";
 import { Heading } from "@chakra-ui/react/heading";
 import { Square } from "@chakra-ui/react/square";
 import { Link } from "@chakra-ui/react/link";
+import { IconUrl } from "../shared/icon-url";
 
 export type ContactInfoProps = {
     email: string,
@@ -19,22 +20,17 @@ export type ContactInfoProps = {
 
 export function ContactInfo(props: ContactInfoProps) {
     return (
-        <VStack>
+        <VStack align="left">
             <HStack gap="4">
-                <Contact />
+                <Contact color="teal" />
                 <Heading as="h1">Contact Information</Heading>
             </HStack>
-            <VStack gap="4">
-                <IconText iconName="mail" text={props.email} />
-                <IconText iconName="phone" text={props.phone} />
-                <IconText iconName="map-pin" text={getAddressLine(props.location)} />
+            <VStack align="left" gap="2">
+                <IconText iconName="mail" text={props.email} textColor={"slate"} />
+                <IconText iconName="phone" text={props.phone} textColor={"slate"} />
+                <IconText iconName="map-pin" text={getAddressLine(props.location)} textColor={"slate"} />
                 {props.url && (
-                    <HStack gap="3">
-                        <Square width="25px" height="25px" bg="teal" flexShrink={0} rounded="md">
-                            <Globe />
-                        </Square>
-                        <Link href={props.url}>{props.url}</Link>
-                    </HStack>
+                    <IconText iconName="globe" text={props.url} url={props.url} textColor={"slate"} />
                 )}
             </VStack>
         </VStack >
