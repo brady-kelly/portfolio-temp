@@ -3,29 +3,25 @@
 import { usePathname } from "next/navigation";
 import { DownloadCV } from "./download-cv";
 import { PortFolioLink } from "./portfolio-link";
-import { HeaderMenu } from "./header-menu";
-import { Box } from "@chakra-ui/react";
+import { NavMenu } from "./nav-menu";
+import { Box, Container, Flex, HStack } from "@chakra-ui/react";
 
 export function SiteHeader() {
     const pathname = usePathname();
     const isHomePage = pathname === "/";
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div className="flex items-center place-content-between">
-                {!isHomePage &&
+        <Container maxW="7xl" py="4" px={{ base: 4, sm: 6, lg: 8 }}>
+            <Flex align="center" justify="space-between">
+                {!isHomePage ? (
                     <PortFolioLink />
-                }
-                {isHomePage &&
-                    <div />
-                }
-                <div className="flex flex-row">
-                    {!isHomePage &&
-                        <HeaderMenu />
-                    }
+                ) : (
+                    <Flex /> /* Keeps the layout balanced if using space-between */
+                )}
+                <HStack gap="4">
+                    {!isHomePage && <NavMenu />}
                     <DownloadCV />
-                </div>
-
-            </div>
-        </div>
+                </HStack>
+            </Flex>
+        </Container>
     );
 }

@@ -33,12 +33,10 @@ export function formatDateEx(date: Date, long?: boolean): string {
 }
 
 export function getInitials(name: string): string {
-  const inits = "";
-
-  const parts = name.split(" ");
-  parts.forEach((p: string) => {
-    inits.concat(p.substring(0, 1));
-  });
-
-  return inits;
+  return name
+    .split(" ") // Split into parts by space
+    .filter((part) => part.length > 0) // Remove empty parts (e.g., from double spaces)
+    .map((part) => part[0]) // Take the first character of each word
+    .join("") // Join them into a single string
+    .toUpperCase(); // Standardize to uppercase
 }

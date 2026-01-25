@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Brady Kelly - Professional Portfolio",
-  description: "Created Brady with v0"
+  description: "Created Brady Kelly with Nextjs and Chakra UI"
 }
 
 export default function RootLayout({

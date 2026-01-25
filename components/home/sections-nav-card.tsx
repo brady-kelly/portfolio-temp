@@ -1,4 +1,6 @@
 /** biome-ignore-all assist/source/organizeImports: TODO: Biome */
+"use client";
+
 import { Box, Card, Heading, Text, HStack, Square, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import { DynamicIcon } from "lucide-react/dynamic";
@@ -19,7 +21,10 @@ export type HomeSectionCardProps = {
 export function HomeSectionCard(section: HomeSectionCardProps) {
     return (
         <Link key={section.href} href={section.href}>
-            <Box padding="6">
+            <Box padding="6" transitionProperty="all" transitionDuration="300ms" _hover={{
+                shadow: "lg",
+                transform: "translateY(-4px)", // Equivalent to -translate-y-1 (0.25rem)
+            }}>
                 <VStack>
                     <HStack alignItems="start">
                         <Square width="50px" height="50px" bg="teal" flexShrink={0} rounded="md">

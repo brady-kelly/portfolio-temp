@@ -1,3 +1,5 @@
+"use client";
+
 import { Center, Heading, List, Mark, Text, VStack } from "@chakra-ui/react";
 import { ContactMe } from "../contact/contact-me";
 

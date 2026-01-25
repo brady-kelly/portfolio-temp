@@ -1,11 +1,8 @@
 import { resumePath } from "@/lib/config/json";
-import { cvPath, readCvFromJsonFile } from "@/lib/json/file";
-import type { CvRoot } from "@/lib/json/reactive";
 import { getBasics } from "@/lib/resume/basics/actions";
-import type { UnsafeBasics } from "@/lib/types/unsafe/unsafe-basics";
-import { getInitials } from "@/lib/utils";
 import { notFound } from "next/navigation";
 import { Basics } from "@/components/resume/basics";
+import { Center, Container } from "@chakra-ui/react";
 
 export default async function BasicDetailsPage() {
     const result = await getBasics(resumePath);
@@ -14,11 +11,12 @@ export default async function BasicDetailsPage() {
         notFound();
 
     const basics = result.data;
-    const inits = getInitials(basics.name);
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">
-            <Basics {...basics} />
-        </div>
+        <Container>
+            <Center>
+                <Basics {...basics} />
+            </Center>
+        </Container>
     );
 }

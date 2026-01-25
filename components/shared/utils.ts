@@ -1,3 +1,5 @@
+"use client";
+
 import { camelToTitleCase } from "@/lib/formatting";
 import { HtmlTextFieldProps } from "./html-text-field";
 
