@@ -3,8 +3,11 @@
 "use client";
 
 import type { ResumeSection } from "@/lib/resume/root/types";
-import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react/text";
 import { HomeSectionCard } from "./sections-nav-card";
+import { Box } from "@chakra-ui/react/box";
+import { Center } from "@chakra-ui/react/center";
+import { HStack, VStack } from "@chakra-ui/react/stack";
 
 export type SectionsNavProps = {
     sections: ResumeSection[],

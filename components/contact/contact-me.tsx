@@ -2,7 +2,7 @@
 
 import { whatsapp } from "@/lib/config/contact";
 import { Whatsapp } from "./whatsapp";
-import { Button } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react/button";
 
 export function ContactMe() {
     const number = whatsapp.number.replace("+", "");

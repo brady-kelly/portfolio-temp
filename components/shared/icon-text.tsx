@@ -6,7 +6,6 @@ import { DynamicIcon } from "lucide-react/dynamic";
 import { toKebabCase } from "@/lib/formatting";
 import type dynamicIconImports from 'lucide-react/dynamicIconImports';
 import { HStack } from "@chakra-ui/react/stack";
-import { Square } from "@chakra-ui/react/square";
 import { Text } from "@chakra-ui/react/text";
 import { Icon } from "@chakra-ui/react/icon";
 import { Link } from "@chakra-ui/react/link";

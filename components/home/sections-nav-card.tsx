@@ -1,11 +1,15 @@
 /** biome-ignore-all assist/source/organizeImports: TODO: Biome */
 "use client";
 
-import { Box, Card, Heading, Text, HStack, Square, VStack } from "@chakra-ui/react";
-import Link from "next/link";
+import { Text } from "@chakra-ui/react/text";
 import { DynamicIcon } from "lucide-react/dynamic";
 import type dynamicIconImports from 'lucide-react/dynamicIconImports';
 import { toKebabCase } from "@/lib/formatting";
+import { Link } from "@chakra-ui/react/link";
+import { Box } from "@chakra-ui/react/box";
+import { HStack, VStack } from "@chakra-ui/react/stack";
+import { Square } from "@chakra-ui/react/square";
+import { Heading } from "@chakra-ui/react/heading";
 type LucideIconName = keyof typeof dynamicIconImports;
 
 export type HomeSectionCardProps = {

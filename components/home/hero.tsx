@@ -1,7 +1,12 @@
 "use client";
 
-import { Center, Heading, List, Mark, Text, VStack } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react/text";
 import { ContactMe } from "../contact/contact-me";
+import { Center } from "@chakra-ui/react/center";
+import { VStack } from "@chakra-ui/react/stack";
+import { Heading } from "@chakra-ui/react/heading";
+import { List } from "@chakra-ui/react/list";
+import { Mark } from "@chakra-ui/react/mark";
 
 export function Hero() {
     return (

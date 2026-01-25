@@ -1,16 +1,17 @@
 /** biome-ignore-all assist/source/organizeImports: <explanation> */
 "use client";
 
-import { Calendar, Globe, Mail, MapPin, Phone } from "lucide-react";
 import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { formatDate, formatDateEx, getAddressLine, getInitials } from "@/lib/utils";
+import { getInitials } from "@/lib/utils";
 import type { Profile } from "@/lib/resume/basics/types";
 import type { Location } from "@/lib/resume/basics/types";
 import { ContactMe } from "../contact/contact-me";
-import { Center, Heading, VStack, Text, HStack, Box, Square } from "@chakra-ui/react";
 import { ContactInfo } from "../basics/contact-info";
+import { HStack, VStack } from "@chakra-ui/react/stack";
+import { Heading } from "@chakra-ui/react/heading";
+import { Box } from "@chakra-ui/react/box";
+import { Square } from "@chakra-ui/react/square";
+import { Text } from "@chakra-ui/react/text";
 
 export type BasicsProps = {
     name: string,

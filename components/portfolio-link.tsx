@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "@chakra-ui/react/button";
+import { Link } from "@chakra-ui/react/link";
 import { ArrowLeft } from "lucide-react";
 
 export function PortFolioLink() {

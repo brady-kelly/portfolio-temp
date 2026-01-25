@@ -3,10 +3,14 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
-import { Box, Container, Flex, HStack, VStack, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react/text";
 import { PortFolioLink } from "./portfolio-link";
 import { NavMenu } from "./nav-menu";
 import { DownloadCV } from "./download-cv";
+import { Container } from "@chakra-ui/react/container";
+import { HStack, VStack } from "@chakra-ui/react/stack";
+import { Flex } from "@chakra-ui/react/flex";
+import { Box } from "@chakra-ui/react/box";
 
 export function SiteFooter() {
     const pathname = usePathname();

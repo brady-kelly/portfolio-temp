@@ -1,6 +1,9 @@
 "use client";
 
-import { Box, Flex, Button, Link } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react/box";
+import { Button } from "@chakra-ui/react/button";
+import { Flex } from "@chakra-ui/react/flex";
+import { Link } from "@chakra-ui/react/link";
 
 // TODO: Test header menu.
 export function NavMenu() {

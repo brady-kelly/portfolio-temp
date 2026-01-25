@@ -4,7 +4,9 @@ import { usePathname } from "next/navigation";
 import { DownloadCV } from "./download-cv";
 import { PortFolioLink } from "./portfolio-link";
 import { NavMenu } from "./nav-menu";
-import { Box, Container, Flex, HStack } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react/container";
+import { Flex } from "@chakra-ui/react/flex";
+import { HStack } from "@chakra-ui/react/stack";
 
 export function SiteHeader() {
     const pathname = usePathname();
