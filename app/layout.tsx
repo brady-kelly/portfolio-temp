@@ -1,10 +1,12 @@
+/** biome-ignore-all assist/source/organizeImports: <explanation> */
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Provider } from "@/components/ui/provider";
-import { Box, Center, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react/flex";
+import { Box } from "@chakra-ui/react/box";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +38,7 @@ export default function RootLayout({
             <Box as="header" paddingX="4">
               <SiteHeader />
             </Box>
-            <Box as="main" flexGrow={1} padding={4}>
+            <Box as="main" flexGrow={1} padding={4} bg="bg.subtle">
               {children}
             </Box>
             <Box as="footer">

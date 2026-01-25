@@ -21,11 +21,11 @@ export type ContactInfoProps = {
 export function ContactInfo(props: ContactInfoProps) {
     return (
         <VStack align="left">
-            <HStack gap="4">
+            <HStack gap="4" marginBottom="4">
                 <Contact color="teal" />
                 <Heading as="h1">Contact Information</Heading>
             </HStack>
-            <VStack align="left" gap="2">
+            <VStack align="left" gap="3">
                 <IconText iconName="mail" text={props.email} textColor={"slate"} />
                 <IconText iconName="phone" text={props.phone} textColor={"slate"} />
                 <IconText iconName="map-pin" text={getAddressLine(props.location)} textColor={"slate"} />

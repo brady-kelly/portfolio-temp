@@ -31,13 +31,13 @@ export type BasicsProps = {
 export function Basics(props: BasicsProps) {
     const initials = getInitials(props.name);
     return (
-        <VStack align={"center"}>
+        <VStack align={"center"} justify="start">
             <Heading as="h1" size="4xl" marginY="5" fontWeight="600">
                 Basic Details
             </Heading>
-            <HStack gap="8">
-                <Box>
-                    <VStack gap="8">
+            <HStack gap="8" align="start">
+                <Box w="64" padding="4" bg="white" borderColor="gray.200" borderWidth="1px" borderRadius="md">
+                    <VStack gap="3">
                         <Square width="50px" height="50px" padding="4" rounded="full" bg="teal">
                             <Text fontSize="4xl">{initials}</Text>
                         </Square>
@@ -49,17 +49,16 @@ export function Basics(props: BasicsProps) {
                         <ContactMe />
                     </VStack>
                 </Box>
-                <VStack gap="6">
-                    {/* Details Cards */}
-                    {/* Contact Information */}
-                    <ContactInfo
-                        email={props.email}
-                        phone={props.phone}
-                        location={props.location}
-                        url={props.url}
-                    />
+                <Box padding="4" bg="white" borderColor="gray.200" borderWidth="1px" borderRadius="md">
+                    <VStack gap="6" justify="start" rounded="md">
+                        <ContactInfo
+                            email={props.email}
+                            phone={props.phone}
+                            location={props.location}
+                            url={props.url}
+                        />
 
-                    {/* Personal Information
+                        {/* Personal Information
                     <Card className="border-slate-200">
                         <CardHeader>
                             <CardTitle className="text-slate-900 flex items-center gap-2">
@@ -107,7 +106,8 @@ export function Basics(props: BasicsProps) {
                             />
                         </CardContent>
                     </Card> */}
-                </VStack>
+                    </VStack>
+                </Box>
             </HStack>
         </VStack>
     );
