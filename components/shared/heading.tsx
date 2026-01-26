@@ -1,10 +1,11 @@
-import { toKebabCase } from "@/lib/formatting";
+/** biome-ignore-all assist/source/organizeImports: <explanation> */
+import kebabCase from "kebab-case";
 import { cn } from "@/lib/utils";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { DynamicIcon } from "lucide-react/dynamic";
 import type dynamicIconImports from 'lucide-react/dynamicIconImports';
-import React from "react";
+import type React from "react";
 type LucideIconName = keyof typeof dynamicIconImports;
 
 const headingVariants = cva(
@@ -57,7 +58,7 @@ export function Heading({
         <Comp className={cn(headingVariants({ size, className }))} {...props}>
             {iconName && (
                 <DynamicIcon
-                    name={toKebabCase(iconName) as LucideIconName}
+                    name={kebabCase(iconName) as LucideIconName}
                     className={iconVariants({ iconSize })}
                     aria-hidden="true"
                 />
