@@ -9,7 +9,7 @@ export function PortFolioLink() {
         <Link href="/">
             <Button
                 variant="ghost"
-                className="text-slate-600 hover:text-slate-900"
+                className="hover:font-bold text-white"
             >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Home

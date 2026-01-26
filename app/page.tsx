@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { cvSections } from "@/data/sections";
 import { ContactMe } from "@/components/contact/contact-me";
+import { PageHeading } from "@/components/shared/page-heading";
 
 export default function HomePage() {
   const sections = cvSections;
@@ -11,9 +12,7 @@ export default function HomePage() {
       <div className="relative overflow-hidden">
         <div className="relative max-w-7xl px-4 sm:px-1 lg:px-2 pt-10 pb-8">
           <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-[#27E4BE] mb-6 text-balance">
-              Brady Kelly - Senior Software Engineer
-            </h1>
+            <PageHeading text="Brady Kelly - Senior Software Engineer" />
             <div className="w-3xl mx-auto mb-3.5 text-white">
               <p>I offer quality software development and related services at reasonable rates.</p>
               <p>I have 25 years experience in the field and deliver quality solutions with personal care and attention.</p>

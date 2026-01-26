@@ -17,7 +17,7 @@ export default async function BasicDetailsPage() {
     const inits = getInitials(basics.name);
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">
+        <div className="min-h-screen">
             <Basics {...basics} />
         </div>
     );

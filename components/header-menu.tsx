@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export function HeaderMenu() {
     return (
-        <nav className="flex gap-2">
+        <nav className="flex gap-2 text-white">
             <Link href="/cv-info/basics">
                 <Button variant="ghost" size="sm">
                     Basic Details
