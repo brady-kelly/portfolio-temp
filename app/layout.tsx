@@ -26,17 +26,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header>
-          <SiteHeader />
-        </header>
-        {children}
-        <footer>
-          <SiteFooter />
-        </footer>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
+        {/* THIS IS THE BACKGROUND: It closes itself immediately. */}
+        <div
+          className="fixed inset-0 -z-10 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat"
+        />
+
+        {/* THIS IS THE CONTENT: It sits "above" the background and can grow. */}
+        <div className="flex flex-col min-h-screen">
+          <header>
+            <SiteHeader />
+          </header>
+
+          <main className="flex-grow">
+            {children}
+          </main>
+
+          <footer>
+            <SiteFooter />
+          </footer>
+        </div>
+
       </body>
     </html>
+
   );
 }

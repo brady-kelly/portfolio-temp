@@ -6,7 +6,7 @@ import { ContactMe } from "@/components/contact/contact-me";
 export default function HomePage() {
   const sections = cvSections;
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="relative max-w-7xl px-4 sm:px-1 lg:px-2 pt-10 pb-8">
