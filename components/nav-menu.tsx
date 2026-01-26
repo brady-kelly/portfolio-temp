@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 
-export function HeaderMenu() {
+export function NavMenu() {
     return (
         <nav className="flex gap-2 text-white">
             <Link href="/cv-info/basics">
@@ -24,6 +24,16 @@ export function HeaderMenu() {
             <Link href="/cv-info/education">
                 <Button variant="ghost" size="sm">
                     Education
+                </Button>
+            </Link>
+            <Link href="/cv-info/certificates">
+                <Button variant="ghost" size="sm">
+                    Certificates
+                </Button>
+            </Link>
+            <Link href="/cv-info/languages-interests">
+                <Button variant="ghost" size="sm">
+                    Languages & Interests
                 </Button>
             </Link>
         </nav>

@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { DownloadCV } from "./download-cv";
 import { PortFolioLink } from "./portfolio-link";
-import { HeaderMenu } from "./header-menu";
+import { NavMenu } from "./nav-menu";
 
 export function SiteHeader() {
     const pathname = usePathname();
@@ -20,7 +20,7 @@ export function SiteHeader() {
                     }
                     <div className="flex flex-row">
                         {!isHomePage &&
-                            <HeaderMenu />
+                            <NavMenu />
                         }
                         <DownloadCV />
                     </div>
