@@ -8,40 +8,9 @@ import { Badge } from "../../ui/badge";
 import { Heading } from "../../shared/heading";
 import { CategoryCard } from "./category-card";
 
-const getSkillLevelColor = (level: string) => {
-    const lvl = Number(level);
-    if (lvl >= 90) return "bg-emerald-500";
-    if (lvl >= 80) return "bg-blue-500";
-    if (lvl >= 70) return "bg-yellow-500";
-    return "bg-slate-400";
-};
-
-const getSkillLevelText = (level: string) => {
-    const lvl = Number(level);
-    if (lvl >= 90) return "Expert";
-    if (lvl >= 80) return "Advanced";
-    if (lvl >= 70) return "Intermediate";
-    return "Beginner";
-};
-
 export interface SkillsContentProps {
     categories: SkillCategory[];
     tools: string[];
-}
-
-function getIconElement(iconName?: string): ReactNode {
-    switch (iconName?.toLowerCase()) {
-        case "database":
-            return (<Database className="w-5 h-5 text-white" />);
-        case "code":
-            return (<Code className="w-5 h-5 text-white" />);
-        case "users":
-            return (<Users className="w-5 h-5 text-white" />);
-        case "cloud":
-            return (<Cloud className="w-5 h-5 text-white" />)
-        default:
-            return (<BrainCog className="w-5 h-5 text-white" />);
-    }
 }
 
 export function SkillsContent({ categories, tools }: SkillsContentProps) {
