@@ -6,7 +6,7 @@ export default async function Educationpage() {
     const prim = education as Education[];
     const add = additionalEducation;
     return (
-        <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">
+        <div className="min-h-screen">
             <EducationContent primary={prim} additional={add} />
         </div>
     );

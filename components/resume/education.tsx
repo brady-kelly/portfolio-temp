@@ -1,10 +1,11 @@
 "use client";
 
-import { Calendar, GraduationCap } from "lucide-react";
+import { BookText, Calendar, GraduationCap } from "lucide-react";
 import { AdditionalEducation, Education } from "@/lib/json/reactive";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
+import { PageHeading } from "../shared/page-heading";
 
 export interface EducationProps {
     primary: Education[];
@@ -14,20 +15,12 @@ export interface EducationProps {
 export function EducationContent({ primary, additional }: EducationProps) {
     return (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            {/* Page Title */}
-            <div className="text-center mb-12">
-                <h1 className="text-4xl font-bold text-slate-900 mb-4">
-                    Education History
-                </h1>
-                <p className="text-lg text-slate-600 max-w-2xl mx-auto text-pretty">
-                    Academic background, qualifications, and continuous learning journey
-                </p>
-            </div>
+            <PageHeading text="Education" />
 
             {/* Formal Education */}
             <div className="mb-12">
-                <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                    <GraduationCap className="w-6 h-6 text-emerald-600" />
+                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <GraduationCap className="w-6 h-6" />
                     Formal Education
                 </h2>
 
@@ -100,7 +93,8 @@ export function EducationContent({ primary, additional }: EducationProps) {
 
             {/* Additional Education */}
             <div className="mb-12">
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <BookText className="w-6 h-6" />
                     Continuing Education
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
