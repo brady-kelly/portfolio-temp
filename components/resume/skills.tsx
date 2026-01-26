@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { ReactNode } from "react";
 import { BrainCog, Cloud, Code, Database, FileCode, Lightbulb, Users } from "lucide-react";
 import { Badge } from "../ui/badge";
+import { Heading } from "../shared/heading";
 
 const getSkillLevelColor = (level: string) => {
     const lvl = Number(level);
@@ -47,10 +48,7 @@ export function SkillsContent({ categories, tools }: SkillsContentProps) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Page Title */}
             <div className="text-center mb-12">
-                <h1 className="text-4xl font-bold text-[#27E4BE] mb-4 flex items-center gap-2">
-                    <FileCode className="w-8 h-8" />
-                    Professional Skills
-                </h1>
+                <Heading title="Professional Skills" iconName="fileCode" />
             </div>
 
             {/* Skills Categories */}
