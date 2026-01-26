@@ -15,8 +15,8 @@ export default function HomePage() {
             <PageHeading text="Brady Kelly - Senior Software Engineer" />
             <div className="w-3xl mx-auto mb-3.5 text-white">
               <p>I offer quality software development and related services at reasonable rates.</p>
-              <p>I have 25 years experience in the field and deliver quality solutions with personal care and attention.</p>
-              <p>I specialize in websites, but also do desktop applications, and I am open to discussing any other requirements.</p>
+              <p>25 years experience in this field help me deliver quality solutions with personal care and attention.</p>
+              <p>Websites are my speciality, but I also do desktop applications, and I am open to discussing any other requirements.</p>
             </div>
             <p className="text-slate-600"><em>(Please note that this site is still under construction and lacks several features. I will have them added as soon as possible.)</em></p>
             <div className="mt-3"><ContactMe /></div>
