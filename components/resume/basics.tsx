@@ -1,13 +1,14 @@
+/** biome-ignore-all assist/source/organizeImports: <explanation> */
 "use client";
 
 import { Calendar, Globe, Mail, MapPin, Phone } from "lucide-react";
 import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { formatDate, formatDateEx, getAddressLine, getInitials } from "@/lib/utils";
-import { Profile } from "@/lib/resume/basics/types";
-import { Location } from "@/lib/resume/basics/types";
+import { formatDate, getAddressLine, getInitials } from "@/lib/utils";
+import type { Profile } from "@/lib/resume/basics/types";
+import type { Location } from "@/lib/resume/basics/types";
 import { ContactMe } from "../contact/contact-me";
+import Image from 'next/image';
 
 export type BasicsProps = {
     name: string,
@@ -43,8 +44,14 @@ export function Basics(props: BasicsProps) {
                     <Card className="border-slate-200">
                         <CardContent className="p-6 text-center">
                             {/* Profile Photo Placeholder */}
-                            <div className="w-32 h-32 bg-linear-to-br from-emerald-400 to-emerald-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                                <span className="text-4xl font-bold text-white">{initials}</span>
+                            <div className="relative w-32 h-32 mx-auto mb-6 border-2 border-emerald-500/20 shadow-lg">
+                                <Image
+                                    src="/profile-small.jpg" // Path to your image in the public folder
+                                    alt="Profile picture"
+                                    fill
+                                    className="object-contain"
+                                    priority // Ensures fast loading for profile sections
+                                />
                             </div>
 
                             <h2 className="text-2xl font-bold text-slate-900 mb-2">{props.name}</h2>
