@@ -9,7 +9,7 @@ export function SiteHeader() {
     const pathname = usePathname();
     const isHomePage = pathname === "/";
     return (
-        <header className="bg-white border-b border-slate-200">
+        <header className="bg-[#0D4F52]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div className="flex items-center place-content-between">
                     {!isHomePage &&
