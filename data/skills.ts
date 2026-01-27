@@ -19,7 +19,7 @@ export const skillCategories = [
     // TODO: Map of categories to colours.
     colorClasses: "bg-blue-50 border-blue-200",
     skills: [
-      { name: "ASP.NET MVC", level: 95, years: "17 years" },
+      { name: "ASP.NET", level: 95, years: "25 years" },
       { name: "React", level: 50, years: "5+ years" },
       { name: "TypeScript", level: 70, years: "3 years" },
       { name: "Next.js", level: 25, years: "1 year" },
@@ -45,7 +45,7 @@ export const skillCategories = [
     iconName: "users",
     colorClasses: "bg-orange-50 border-orange-200",
     skills: [
-      { name: "Mentoring", level: 80, years: "15 years" },
+      { name: "Mentoring", level: 70, years: "15 years" },
       { name: "Communication", level: 95, years: "25+ years" },
       { name: "Problem Solving", level: 70, years: "25+ years" },
       { name: "Agile/Scrum", level: 85, years: "5+ years" },
