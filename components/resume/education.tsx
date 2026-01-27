@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
 import { PageHeading } from "../shared/page-heading";
+import { Heading } from "../shared/heading";
 
 export interface EducationProps {
     primary: Education[];
@@ -15,7 +16,7 @@ export interface EducationProps {
 export function EducationContent({ primary, additional }: EducationProps) {
     return (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <PageHeading text="Education" />
+            <Heading title="Education" className="text-[#27E4BE]" />
 
             {/* Formal Education */}
             <div className="mb-12">

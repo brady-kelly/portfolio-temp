@@ -32,7 +32,7 @@ const iconVariants = cva("shrink-0", {
             xl: "size-10",
         },
     },
-    defaultVariants: { iconSize: "sm" },
+    defaultVariants: { iconSize: "md" },
 })
 
 export type HeadingProps = React.HTMLAttributes<HTMLHeadingElement> &
