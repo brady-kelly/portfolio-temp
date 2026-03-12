@@ -22,7 +22,7 @@ export const skillCategories = [
       { name: "ASP.NET MVC", level: 95, years: "17 years" },
       { name: "React", level: 50, years: "5+ years" },
       { name: "TypeScript", level: 70, years: "3 years" },
-      { name: "Next.js", level: 25, years: "1 year" },
+      { name: "Next.js", level: 70, years: "2 years" },
       { name: "HTML/CSS", level: 95, years: "25 years" },
       { name: "JavaScript", level: 85, years: "20 years" },
     ],
