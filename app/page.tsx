@@ -18,7 +18,7 @@ export default function HomePage() {
               <p>25 years experience in this field help me deliver quality solutions with personal care and attention.</p>
               <p>Websites are my speciality, but I also do desktop applications, and I am open to discussing any other requirements.</p>
             </div>
-            <p className="text-slate-600"><em>(Please note that this site is still under construction and lacks several features. I will have them added as soon as possible.)</em></p>
+            {/* <p className="text-slate-600"><em>(Please note that this site may be under construction and lacks several features. I will have them added as soon as possible.)</em></p> */}
             <div className="mt-3"><ContactMe /></div>
           </div>
         </div>
