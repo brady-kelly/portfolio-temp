@@ -21,10 +21,10 @@ model User {
 
 model SkillCategory {
   id            Int       @id @default(autoincrement())
-  userId        Int
+  userId        Int   
   user          User      @relation(fields: [userId], references: [id])
   skills        Skill[]
-  title         String
+  title         String    @unique
   iconName      String
   colourClasses String
 }
@@ -32,9 +32,9 @@ model SkillCategory {
 model Skill {
   id         Int           @id @default(autoincrement())
   categoryId Int
-  category   SkillCategory @relation(fields: [categoryId], references: [id])
+  category   SkillCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
   name       String
   level      Int
-  years      Int 
+  years      String 
 }
 
