@@ -1,6 +1,5 @@
 "use client";
 
-import { SkillCategory } from "@/lib/json/types";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { ReactNode } from "react";
 import { BrainCog, Cloud, Code, Database, Lightbulb, Users } from "lucide-react";

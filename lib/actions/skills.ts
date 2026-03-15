@@ -1,11 +1,9 @@
 "use server";
 
 import { prisma } from "../prisma";
-import type { SkillsCategoryWithSkills } from "../types/database/skills-category-with-skills";
+import type { SkillsGroup } from "../types/database/skills-category";
 
-export async function readUserSkills(
-  email: string,
-): Promise<SkillsCategoryWithSkills[]> {
+export async function readUserSkills(email: string): Promise<SkillsGroup[]> {
   const user = await prisma.user.findUnique({
     where: {
       email: email,
@@ -19,7 +17,7 @@ export async function readUserSkills(
     },
   });
   if (user) {
-    return user.skillCategories as SkillsCategoryWithSkills[];
+    return user.skillCategories as SkillsGroup[];
   } else {
     return [];
   }

@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import type { ReactNode } from "react";
 import { BrainCog, Cloud, Code, Database, FileCode, Lightbulb, Users } from "lucide-react";
 import { Badge } from "../ui/badge";
-import type { SkillsCategoryWithSkills } from "@/lib/types/database/skills-category-with-skills";
+import type { SkillsGroup } from "@/lib/types/database/skills-category";
 
 const getSkillLevelColor = (level: string) => {
     const lvl = Number(level);
@@ -25,7 +25,7 @@ const getSkillLevelText = (level: string) => {
 };
 
 export interface SkillsContentProps {
-    categories: SkillsCategoryWithSkills[];
+    categories: SkillsGroup[];
     tools: string[];
 }
 

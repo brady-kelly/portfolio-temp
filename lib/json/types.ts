@@ -16,10 +16,3 @@ export interface Skill {
   level: string;
   years: string;
 }
-
-export interface SkillCategory {
-  title: string;
-  iconName: string;
-  colorClasses: "bg-emerald-50 border-emerald-200";
-  skills: Skill[];
-}

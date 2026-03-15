@@ -1,6 +1,6 @@
 import type { Prisma } from "@/generated/prisma/client";
 
-export type UserWithCategoriesAndSkills = Prisma.UserGetPayload<{
+export type UserWithSkills = Prisma.UserGetPayload<{
   include: {
     skillCategories: {
       include: { skills: true };
