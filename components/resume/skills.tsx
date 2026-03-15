@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import type { ReactNode } from "react";
 import { BrainCog, Cloud, Code, Database, FileCode, Lightbulb, Users } from "lucide-react";
 import { Badge } from "../ui/badge";
-import type { SkillsGroup } from "@/lib/types/database/skills-category";
+import type { SkillsGroup } from "@/lib/types/database/skills-group";
 
 const getSkillLevelColor = (level: string) => {
     const lvl = Number(level);
@@ -25,7 +25,7 @@ const getSkillLevelText = (level: string) => {
 };
 
 export interface SkillsContentProps {
-    categories: SkillsGroup[];
+    groups: SkillsGroup[];
     tools: string[];
 }
 
@@ -44,7 +44,7 @@ function getIconElement(iconName?: string): ReactNode {
     }
 }
 
-export function SkillsContent({ categories, tools }: SkillsContentProps) {
+export function SkillsContent({ groups, tools }: SkillsContentProps) {
     return (
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Page Title */}
@@ -55,24 +55,23 @@ export function SkillsContent({ categories, tools }: SkillsContentProps) {
                 </h1>
             </div>
 
-            {/* Skills Categories */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                {categories.map((category, categoryIndex) => {
+                {groups.map((group, groupIndex) => {
                     return (
                         <Card
-                            key={categoryIndex}
-                            className={`border-2 ${category.colourClasses}`}
+                            key={groupIndex}
+                            className={`border-2 ${group.colourClasses}`}
                         >
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-3 text-slate-900">
                                     <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
-                                        {getIconElement(category.iconName)}
+                                        {getIconElement(group.iconName)}
                                     </div>
-                                    {category.title}
+                                    {group.title}
                                 </CardTitle>
                             </CardHeader>
                             <CardContent className="space-y-4">
-                                {category.skills.map((skill, skillIndex) => (
+                                {group.skills.map((skill, skillIndex) => (
                                     <div key={skillIndex} className="space-y-2">
                                         <div className="flex items-center justify-between">
                                             <span className="font-medium text-slate-900">

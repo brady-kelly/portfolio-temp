@@ -14,7 +14,7 @@ export default async function SkillsPage() {
     const tools = skillsTools as string[];
     return (
         <div className="min-h-screen">
-            <SkillsContent categories={userCats} tools={tools} />
+            <SkillsContent groups={userCats} tools={tools} />
         </div>
     );
 }
