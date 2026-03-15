@@ -1,10 +1,12 @@
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: TODO: Array keys */
+/** biome-ignore-all assist/source/organizeImports: TODO: Imports */
 "use client";
 
-import { SkillCategory } from "@/lib/json/types";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { BrainCog, Cloud, Code, Database, FileCode, Lightbulb, Users } from "lucide-react";
 import { Badge } from "../ui/badge";
+import type { SkillsCategoryWithSkills } from "@/lib/types/database/skills-category-with-skills";
 
 const getSkillLevelColor = (level: string) => {
     const lvl = Number(level);
@@ -23,7 +25,7 @@ const getSkillLevelText = (level: string) => {
 };
 
 export interface SkillsContentProps {
-    categories: SkillCategory[];
+    categories: SkillsCategoryWithSkills[];
     tools: string[];
 }
 
@@ -59,7 +61,7 @@ export function SkillsContent({ categories, tools }: SkillsContentProps) {
                     return (
                         <Card
                             key={categoryIndex}
-                            className={`border-2 ${category.colorClasses}`}
+                            className={`border-2 ${category.colourClasses}`}
                         >
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-3 text-slate-900">
@@ -80,10 +82,10 @@ export function SkillsContent({ categories, tools }: SkillsContentProps) {
                                                 <Badge
                                                     variant="secondary"
                                                     className={`text-white ${getSkillLevelColor(
-                                                        skill.level
+                                                        skill.level.toString()
                                                     )}`}
                                                 >
-                                                    {getSkillLevelText(skill.level)}
+                                                    {getSkillLevelText(skill.level.toString())}
                                                 </Badge>
                                                 <span className="text-sm text-slate-500">
                                                     {skill.years}
@@ -93,7 +95,7 @@ export function SkillsContent({ categories, tools }: SkillsContentProps) {
                                         <div className="w-full bg-slate-200 rounded-full h-2">
                                             <div
                                                 className={`h-2 rounded-full transition-all duration-500 ${getSkillLevelColor(
-                                                    skill.level
+                                                    skill.level.toString()
                                                 )}`}
                                                 style={{ width: `${skill.level}%` }}
                                             ></div>
