@@ -10,10 +10,3 @@ const adapter = new PrismaPg({ connectionString });
 const prisma = new PrismaClient({ adapter });
 
 export { prisma };
-
-// TODO: try get accelerate working.
-// import { withAccelerate } from "@prisma/extension-accelerate";
-
-// const prismaA = new PrismaClient({
-//   accelerateUrl: process.env.DATABASE_URL,
-// }).$extends(withAccelerate());

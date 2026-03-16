@@ -9,7 +9,7 @@ export async function readUserSkills(email: string): Promise<SkillsGroup[]> {
       email: email,
     },
     include: {
-      skillCategories: {
+      skillGroups: {
         include: {
           skills: true,
         },
@@ -17,7 +17,7 @@ export async function readUserSkills(email: string): Promise<SkillsGroup[]> {
     },
   });
   if (user) {
-    return user.skillCategories as SkillsGroup[];
+    return user.skillGroups as SkillsGroup[];
   } else {
     return [];
   }

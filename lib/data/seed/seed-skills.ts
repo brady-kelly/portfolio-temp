@@ -1,22 +1,22 @@
-import { skillCategories } from "@/data/skills";
+import { skillGroups } from "@/data/skills";
 import { prisma } from "@/lib/prisma";
 
 export async function seedUserSkillCats(userId: number) {
-  const del = await prisma.skillCategory.deleteMany({
+  const del = await prisma.skillGroup.deleteMany({
     where: {
       userId: userId,
     },
   });
 
-  for (const cat of skillCategories) {
-    const newCat = await prisma.skillCategory.create({
+  for (const group of skillGroups) {
+    const newGroup = await prisma.skillGroup.create({
       data: {
         userId: userId,
-        title: cat.title,
-        iconName: cat.iconName,
-        colourClasses: cat.colorClasses,
+        title: group.title,
+        iconName: group.iconName,
+        colourClasses: group.colorClasses,
         skills: {
-          create: cat.skills.map((skill) => ({
+          create: group.skills.map((skill) => ({
             name: skill.name,
             level: skill.level,
             years: skill.years.toString(),
@@ -24,6 +24,6 @@ export async function seedUserSkillCats(userId: number) {
         },
       },
     });
-    console.log("Created cat:", newCat);
+    console.log("Created group:", newGroup);
   }
 }
