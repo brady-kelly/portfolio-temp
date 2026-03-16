@@ -16,3 +16,19 @@ export interface Skill {
   level: string;
   years: string;
 }
+
+export type Position = {
+  id: string;
+  hidden: boolean;
+  company: string;
+  position: string;
+  location: string;
+  period: string;
+  website: {
+    url: string;
+    label: string;
+  };
+  description: string;
+  roles: string[];
+  technologies?: string[];
+};

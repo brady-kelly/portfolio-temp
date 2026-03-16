@@ -4,11 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
 import { Building, Calendar } from "lucide-react";
-import { Work } from "@/lib/json/reactive";
+import { JsResumeWork } from "@/lib/json/reactive";
 import { formatDate } from "@/lib/utils";
 
 export interface ExperienceProps {
-    experience: Work[];
+    experience: JsResumeWork[];
 }
 
 export function Experience({ experience }: ExperienceProps) {
@@ -31,7 +31,7 @@ export function Experience({ experience }: ExperienceProps) {
                 <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-slate-200"></div>
 
                 <div className="space-y-8">
-                    {experience.map((job: Work, index: number) => (
+                    {experience.map((job: JsResumeWork, index: number) => (
                         <div key={index} className="relative flex items-start gap-6">
                             {/* Timeline Dot */}
                             <div className="flex-shrink-0 w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center relative z-10">
