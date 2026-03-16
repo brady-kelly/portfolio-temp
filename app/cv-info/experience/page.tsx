@@ -1,5 +1,5 @@
 import { utilLog } from "@/lib/logging/console";
-import { CvRoot, Work } from "@/lib/json/reactive";
+import type { CvRoot, Work } from "@/lib/json/reactive";
 import { cvPath, readCvFromJsonFile } from "@/lib/json/file";
 import { Experience } from "@/components/resume/experience";
 import { Makeover } from "@/components/shared/makeover";

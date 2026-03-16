@@ -1,5 +1,5 @@
-import fs from "fs";
-import { CvRoot } from "./reactive";
+import fs from "node:fs";
+import type { CvRoot } from "./reactive";
 
 export const cvPath = "data/jsonresume-vercel-cv-2.json";
 
