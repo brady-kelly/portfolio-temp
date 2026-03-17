@@ -17,6 +17,7 @@ model User {
   email String      @unique
   name  String?
   skillGroups       SkillGroup[]
+  positions         Position[]
 }
 
 model SkillGroup {
@@ -38,3 +39,16 @@ model Skill {
   years      String 
 }
 
+model Position {
+  id            Int           @id @default(autoincrement())
+  userId        Int       
+  user          User          @relation(fields: [userId], references: [id])  
+  hidden        Boolean       @default(false)
+  company       String
+  position      String
+  location      String
+  period        String
+  websiteUrl    String
+  websiteLabel  String
+  description   String
+}
