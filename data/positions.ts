@@ -1,4 +1,4 @@
-export const works = [
+export const positionsData = [
   {
     id: "e94w64kw9e6t3n0uwke2kp1b",
     hidden: false,
