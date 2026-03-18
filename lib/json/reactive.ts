@@ -3,7 +3,7 @@ import { UnsafeBasics } from "../types/unsafe/unsafe-basics";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export interface CvRoot {
   basics: UnsafeBasics;
-  work: Work[];
+  work: JsResumeWork[];
   volunteer: Volunteer[];
   education: Education[];
   awards: Award[];
@@ -143,7 +143,7 @@ export interface Volunteer {
   highlights: string[];
 }
 
-export interface Work {
+export interface JsResumeWork {
   company: string;
   location: string;
   position: string;

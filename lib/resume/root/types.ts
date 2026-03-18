@@ -1,4 +1,4 @@
-import { Award, Education, Volunteer, Work } from "@/lib/json/reactive";
+import { Award, Education, Volunteer, JsResumeWork } from "@/lib/json/reactive";
 import { UnsafeBasics } from "@/lib/types/unsafe/unsafe-basics";
 import { Certificate } from "@/lib/types/unsafe/certificate";
 import { Interest } from "@/lib/types/unsafe/interest";
@@ -16,7 +16,7 @@ import { Skill } from "@/lib/types/unsafe/skill";
  */
 export type SafeResume = {
   basics: UnsafeBasics;
-  work?: Work[];
+  work?: JsResumeWork[];
   volunteer?: Volunteer[];
   education?: Education[];
   awards?: Award[];

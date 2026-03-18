@@ -1,13 +1,20 @@
-import { SkillsContent } from "@/components/resume/skills";
-import { skillCategories, skillsTools } from "@/data/skills";
-import { SkillCategory } from "@/lib/json/types";
+/** biome-ignore-all assist/source/organizeImports: TODO: Imports */
+"use server";
 
-export default function SkillsPage() {
-    const categories = skillCategories as unknown as SkillCategory[];
+import { SkillsContent } from "@/components/resume/skills";
+import { skillsTools } from "@/data/skills";
+import { readUserSkills } from "@/lib/actions/skills";
+import { notFound } from "next/navigation";
+
+export default async function SkillsPage() {
+    const userCats = await readUserSkills("brady@prisma.io");
+    if (!userCats)
+        notFound();
+
     const tools = skillsTools as string[];
     return (
         <div className="min-h-screen">
-            <SkillsContent categories={categories} tools={tools} />
+            <SkillsContent groups={userCats} tools={tools} />
         </div>
     );
 }

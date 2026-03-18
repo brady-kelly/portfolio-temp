@@ -1,4 +1,4 @@
-export const skillCategories = [
+export const skillGroups = [
   {
     title: "Backend Development",
     iconName: "database",

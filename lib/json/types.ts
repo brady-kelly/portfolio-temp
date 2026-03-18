@@ -17,9 +17,18 @@ export interface Skill {
   years: string;
 }
 
-export interface SkillCategory {
-  title: string;
-  iconName: string;
-  colorClasses: "bg-emerald-50 border-emerald-200";
-  skills: Skill[];
-}
+export type Position = {
+  id: string;
+  hidden: boolean;
+  company: string;
+  position: string;
+  location: string;
+  period: string;
+  website: {
+    url: string;
+    label: string;
+  };
+  description: string;
+  roles: string[];
+  technologies?: string[];
+};
