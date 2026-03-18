@@ -2,11 +2,11 @@
 /** biome-ignore-all assist/source/organizeImports: TODO: Imports */
 //import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import type { Position } from "@/lib/json/types";
 import { Building, Calendar } from "lucide-react";
 import { PositionRoles } from "./position-roles";
 import { PositionTechs } from "./position-techs";
 import { PositionLink } from "./position-link";
+import { Position } from "@/lib/types/database/Position";
 
 export type PositionProps = {
     position: Position
@@ -25,7 +25,7 @@ export function PositionCard({ position }: PositionProps) {
                             <CardTitle className="text-xl text-slate-900">
                                 {position.position}
                             </CardTitle>
-                            <PositionLink company={position.company} url={position.website.url} label={position.website.label} />
+                            <PositionLink company={position.company} url={position.websiteUrl} label={position.websiteLabel} />
                         </div>
                         {/* <Badge
                         variant="secondary"
@@ -45,9 +45,7 @@ export function PositionCard({ position }: PositionProps) {
                     <h4 className="font-medium text-slate-900 mb-2">
                         Description:
                     </h4>
-                    <p className="text-slate-700 leading-relaxed text-pretty">
-                        {position.description}
-                    </p>
+                    <div className="text-slate-700 leading-relaxed text-pretty" dangerouslySetInnerHTML={{ __html: position.description }} />
                     {/* <div>
                         <h4 className="font-medium text-slate-900 mb-2">
                             Duties:
@@ -58,16 +56,16 @@ export function PositionCard({ position }: PositionProps) {
                                     key={index}
                                     className="text-slate-700 flex items-start gap-2"
                                 >
-                                    <span className="w-1.5 h-1.5 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span className="w-1.5 h-1.5 bg-emerald-600 rounded-full mt-2 shrink-0"></span>
                                     <span className="text-pretty">{duty}</span>
                                 </li>
                             ))}
                         </ul>
                     </div> */}
 
-                    {position.roles.length > 0 && <PositionRoles {...position.roles} />}
+                    {/* {position.roles.length > 0 && <PositionRoles {...position.roles} />}
 
-                    {position.technologies && <PositionTechs {...position.technologies} />}
+                    {position.technologies && <PositionTechs {...position.technologies} />} */}
                     {/* {job.reasonForLeaving && job.endDate !== "Present" && (
                     <div>
                         <h4 className="font-medium text-slate-900 mb-2">
@@ -80,6 +78,6 @@ export function PositionCard({ position }: PositionProps) {
                 )} */}
                 </CardContent>
             </Card>
-        </div>
+        </div >
     )
 }

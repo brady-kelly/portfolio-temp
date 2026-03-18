@@ -1,7 +1,7 @@
 import { skillGroups } from "@/data/skills";
 import { prisma } from "@/lib/prisma";
 
-export async function seedUserSkillCats(userId: number) {
+export async function seedUserWithSkills(userId: number) {
   const del = await prisma.skillGroup.deleteMany({
     where: {
       userId: userId,

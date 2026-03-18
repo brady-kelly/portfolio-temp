@@ -1,4 +1,4 @@
-import { seedUserSkillCats } from "./lib/data/seed/seed-skills";
+import { seedUserWithSkills } from "./lib/data/seed/seed-skills";
 import { prisma } from "./lib/prisma";
 
 async function main() {
@@ -11,19 +11,12 @@ async function main() {
       data: {
         name: "Brady",
         email: "brady@prisma.io",
-        skillCategories: {
-          create: {
-            title: "Backend Development",
-            iconName: "database",
-            colourClasses: "bg-emerald-50 border-emerald-200",
-          },
-        },
       },
     });
     console.log("Created user:", existUser);
   }
 
-  const cats = await seedUserSkillCats(existUser.id);
+  const cats = await seedUserWithSkills(existUser.id);
   console.log(cats);
 }
 

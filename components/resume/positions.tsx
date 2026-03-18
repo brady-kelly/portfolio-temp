@@ -1,8 +1,8 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: TODO: Indexes */
-import type { Position } from "@/lib/json/types";
+import { Position } from "@/lib/types/database/Position";
 import { PositionCard } from "../cv-info/experience/position-card";
 
-export interface PositionsProps {
+export type PositionsProps = {
     positions: Position[];
 }
 
