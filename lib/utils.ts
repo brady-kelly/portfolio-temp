@@ -11,7 +11,8 @@ export function skillCatColour(colour: string): string {
 }
 
 export function getAddressLine(location: Location): string {
-  return `${location.address}, ${location.city}, ${location.postalCode}, ${location.region}, ${location.countryName}`;
+  //return `${location.address}, ${location.city}, ${location.postalCode}, ${location.region}, ${location.countryName}`;
+  return `${location.address}, ${location.city}, ${location.region}, ${location.countryName}`;
 }
 
 export function formatDate(dateString: string, long?: boolean) {
