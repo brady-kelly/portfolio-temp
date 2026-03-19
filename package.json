@@ -5,11 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "npx prisma generate && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write",
-    "postinstall": "DIRECT_DATABASE_URL=placeholder npx prisma generate"
+    "format": "biome format --write"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.5.0",
