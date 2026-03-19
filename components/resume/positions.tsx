@@ -1,5 +1,5 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: TODO: Indexes */
-import { Position } from "@/lib/types/database/Position";
+import type { Position } from "@/lib/types/database/position";
 import { PositionCard } from "../cv-info/experience/position-card";
 
 export type PositionsProps = {

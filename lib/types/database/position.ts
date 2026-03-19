@@ -1,3 +1,3 @@
-import { Prisma } from "@/generated/prisma/client";
+import type { Prisma } from "@/generated/prisma/client";
 
 export type Position = Prisma.PositionGetPayload<{}>;

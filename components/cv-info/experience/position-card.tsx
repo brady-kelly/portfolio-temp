@@ -3,10 +3,8 @@
 //import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building, Calendar } from "lucide-react";
-import { PositionRoles } from "./position-roles";
-import { PositionTechs } from "./position-techs";
 import { PositionLink } from "./position-link";
-import { Position } from "@/lib/types/database/Position";
+import type { Position } from "@/lib/types/database/position";
 
 export type PositionProps = {
     position: Position
