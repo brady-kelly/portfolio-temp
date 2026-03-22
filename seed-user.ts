@@ -1,4 +1,3 @@
-import { seedUserWithSkills } from "./lib/data/seed/seed-skills";
 import { prisma } from "./lib/prisma";
 
 async function main() {
@@ -16,8 +15,8 @@ async function main() {
     console.log("Created user:", existUser);
   }
 
-  const cats = await seedUserWithSkills(existUser.id);
-  console.log(cats);
+  // const cats = await seedUserWithSkills(existUser.id);
+  // console.log(cats);
 }
 
 main()
