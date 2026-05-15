@@ -5,7 +5,11 @@
     "target": "ES2023",
     "strict": true,
     "esModuleInterop": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "noEmit": true,
@@ -19,7 +23,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ],
+      "@payload-config": [
+        "./payload.config.ts"
+      ]
     }
   },
   "include": [
@@ -30,5 +39,9 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["components/archive", "node_modules", "**/*.txt"]
+  "exclude": [
+    "components/archive",
+    "node_modules",
+    "**/*.txt"
+  ]
 }
